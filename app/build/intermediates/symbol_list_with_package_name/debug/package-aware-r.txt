@@ -50,6 +50,8 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array cityArray
+array guArray
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1686,6 +1688,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable spinner
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1757,6 +1760,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_image
 id alertTitle
 id aligned
 id all
@@ -1793,6 +1797,7 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id city_spinner
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -1865,6 +1870,7 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id gu_spinner
 id guideline
 id header_title
 id hideable
@@ -1951,6 +1957,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
 id navigation_header_container
 id never
 id noScroll
@@ -1974,6 +1981,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id phone
 id pin
 id position
 id postLayout
@@ -1985,7 +1993,9 @@ id ratio
 id record
 id rectangles
 id report
+id report_content
 id report_next
+id report_ok
 id reverseSawtooth
 id right
 id rightToLeft

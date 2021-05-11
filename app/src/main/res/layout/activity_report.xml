@@ -27,25 +27,50 @@
             android:textSize="22dp"
             android:textStyle="bold"/>
 
-        <TextView
+        <EditText
+            android:id="@+id/report_content"
             android:layout_width="330dp"
-            android:layout_height="180dp"
+            android:layout_height="150dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="80dp"
-            android:text=" 내용을 입력해주세요."
-            android:textColor="@color/gray"
-            android:background="@color/white"
+            android:hint="  내용을 10자 이상 입력하세요."
+            android:textColor="@color/black"
+            android:background="@drawable/spinner"
             android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="330dp"
+            android:layout_height="280dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="250dp"
+            android:textColor="@color/gray"
+            android:background="@drawable/spinner"
+            android:scaleType="centerCrop"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/add_image"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="530dp"
+            android:background="@drawable/green_button"
+            android:textColor="@color/white"
+            android:text="사진 첨부"
+            android:textSize="22dp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/report_next"
             android:layout_width="140dp"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="600dp"
+            android:layout_marginTop="610dp"
             android:text="다음 >"
-            android:background="@drawable/green_button"
-            android:textSize="22dp"
+            android:background="@color/gray"
+            android:textColor="@color/white"
+            android:textSize="20dp"
             android:textStyle="bold"/>
 
     </FrameLayout>

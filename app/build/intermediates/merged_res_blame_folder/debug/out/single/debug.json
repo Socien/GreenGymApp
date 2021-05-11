@@ -112,6 +112,10 @@
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spinner.xml.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\drawable\\spinner.xml"
+    },
+    {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },

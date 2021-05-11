@@ -15,7 +15,7 @@
         android:layout_marginLeft="32dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="green gym"
+        android:text="Green Gym"
         android:textColor="@color/green"
         android:textSize="55dp"
         android:textStyle="bold" />

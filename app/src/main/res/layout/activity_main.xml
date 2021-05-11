@@ -13,6 +13,8 @@
         android:layout_height="60dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="100dp"
+        android:background="@drawable/green_button"
+        android:textColor="@color/white"
         android:text="공원 검색"
         android:textSize="25dp"
         android:textStyle="bold" />
@@ -23,6 +25,8 @@
         android:layout_height="60dp"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
+        android:background="@drawable/green_button"
+        android:textColor="@color/white"
         android:text="사용 방법"
         android:textSize="25dp"
         android:textStyle="bold"/>
@@ -33,6 +37,8 @@
         android:layout_height="60dp"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
+        android:background="@drawable/green_button"
+        android:textColor="@color/white"
         android:text="운동량"
         android:textSize="25dp"
         android:textStyle="bold"/>
@@ -43,6 +49,8 @@
         android:layout_height="60dp"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
+        android:background="@drawable/green_button"
+        android:textColor="@color/white"
         android:text="신고"
         android:textSize="25dp"
         android:textStyle="bold"/>
