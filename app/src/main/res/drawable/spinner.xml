@@ -5,8 +5,8 @@
         android:color="@color/white"
         />
     <size
-        android:width="59dp"
-        android:height="59dp"
+        android:width="60dp"
+        android:height="60dp"
         />
     <stroke
         android:width="4dp"

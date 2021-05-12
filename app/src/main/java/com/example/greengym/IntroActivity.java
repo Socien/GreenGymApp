@@ -8,7 +8,7 @@ import android.os.Handler;
 import android.os.Message;
 
 public class IntroActivity extends AppCompatActivity {
-//
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

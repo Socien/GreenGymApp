@@ -5,7 +5,7 @@
         android:color="@color/green"
         />
     <size
-        android:width="242dp"
+        android:width="243dp"
         android:height="60dp"
         />
     <stroke
