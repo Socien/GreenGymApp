@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".Search_down">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="공중걷기"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="노젓기"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="220dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="달리기"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="320dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="레그프레스"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="420dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="스텝퍼"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="520dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="오금펴기"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="620dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="자전거"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="720dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="파도타기"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

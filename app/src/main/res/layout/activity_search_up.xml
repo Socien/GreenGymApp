@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".Search_up">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="3단철봉"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="구름사다리"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="220dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="로프당기기"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="320dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="어깨유연성운동"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="420dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="역기내리기"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="520dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="역기대"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="620dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="역기올리기"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="720dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="윗몸일으키기"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="820dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="철봉"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn10"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="920dp"
+                android:background="@drawable/spinner"
+                android:textColor="@color/black"
+                android:text="팔굽혀펴기"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

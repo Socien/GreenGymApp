@@ -12,7 +12,7 @@ import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+//
 public class Rate extends AppCompatActivity {
     private Button startBtn, stopBtn, statistic;
     private TextView timeTextView, max_recordTextView, recordTextView;

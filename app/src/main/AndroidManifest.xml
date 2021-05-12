@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.greengym">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+//
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +14,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Greengym">
-        <activity android:name=".Search"/>
+        <activity android:name=".Search_stretch"></activity>
+        <activity android:name=".Search_all" />
+        <activity android:name=".Search_down" />
+        <activity android:name=".Search_up" />
+        <activity android:name=".Search_Map" />
+        <activity android:name=".Search_byEquip" />
+        <activity android:name=".Method2" />
+        <activity android:name=".Search" />
         <activity android:name=".Rate_Statistic" />
         <activity android:name=".Report_Location" />
         <activity android:name=".Report" />

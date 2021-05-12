@@ -2,6 +2,8 @@ package com.example.greengym;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 
 public class Rate_Statistic extends AppCompatActivity {
@@ -13,5 +15,11 @@ public class Rate_Statistic extends AppCompatActivity {
         //액션바 제목
         ActionBar actionbar = getSupportActionBar();
         actionbar.setTitle("운동량 통계");
+    }
+
+    @Override
+    public void onBackPressed(){
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
     }
 }

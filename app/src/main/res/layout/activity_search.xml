@@ -4,6 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Search">
+
+    <Button
+        android:id="@+id/byposition"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/green_button"
+        android:textColor="@color/white"
+        android:text="현재 위치로 검색"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/byequip"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/green_button"
+        android:textColor="@color/white"
+        android:text="운동 기구로 검색"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
 
 </LinearLayout>

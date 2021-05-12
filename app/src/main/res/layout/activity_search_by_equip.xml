@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Search_byEquip">
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/green_button"
+        android:textColor="@color/white"
+        android:text="상체 운동기구"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/green_button"
+        android:textColor="@color/white"
+        android:text="하체 운동기구"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/all"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/green_button"
+        android:textColor="@color/white"
+        android:text="전신 운동기구"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/stretch"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/green_button"
+        android:textColor="@color/white"
+        android:text="스트레칭 기구"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
