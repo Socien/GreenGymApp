@@ -54,7 +54,7 @@
             android:layout_width="330dp"
             android:layout_height="50dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="530dp"
+            android:layout_marginTop="527dp"
             android:background="@drawable/green_button"
             android:textColor="@color/white"
             android:text="사진 첨부"

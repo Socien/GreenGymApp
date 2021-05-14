@@ -1689,10 +1689,12 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pin
+drawable sound
 drawable spinner
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable youtube
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1707,6 +1709,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id Tmap
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1802,6 +1805,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id chart
 id checkbox
 id checked
 id chip
@@ -1914,7 +1918,6 @@ id leftToRight
 id line1
 id line3
 id linear
-id linearLayoutTmap
 id listMode
 id list_item
 id masked
@@ -2020,6 +2023,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id run
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2056,6 +2060,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id sound
 id spacer
 id spline
 id split_action_bar
@@ -2122,6 +2127,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id turnwaist
 id unchecked
 id uniform
 id unlabeled
@@ -2133,6 +2139,7 @@ id withText
 id withinBounds
 id wrap
 id wrap_content
+id youtube
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
@@ -2198,6 +2205,8 @@ layout activity_intro
 layout activity_main
 layout activity_method
 layout activity_method2
+layout activity_method__run
+layout activity_method__turn_waist
 layout activity_rate
 layout activity_rate__statistic
 layout activity_report

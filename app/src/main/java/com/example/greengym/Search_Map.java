@@ -32,16 +32,16 @@ public class Search_Map extends AppCompatActivity {
         tMapView = new TMapView(this);
         tMapView.setSKTMapApiKey("l7xxffa04884ccc4425e9ac15036b9b46726");
 
-        tMapView.setZoomLevel(17);
+        tMapView.setZoomLevel(15);
         tMapView.setIconVisibility(true);
         tMapView.setMapType(TMapView.MAPTYPE_STANDARD);
         tMapView.setLanguage(TMapView.LANGUAGE_KOREAN);
 
-        LinearLayout linearLayoutTmap = (LinearLayout)findViewById(R.id.linearLayoutTmap);
-        linearLayoutTmap.addView(tMapView);
+        LinearLayout Tmap = (LinearLayout)findViewById(R.id.Tmap);
+        Tmap.addView(tMapView);
 
-        // Request For GPS permission
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        //GPS
+        if (Build.VERSION.SDK_INT >= 23) {
             requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
         }
 
@@ -56,7 +56,11 @@ public class Search_Map extends AppCompatActivity {
 
         tMapGPS.OpenGps();
 
+
+
     }
+
+
 
     public void onLocationChange(Location location) {
         tMapView.setLocationPoint(location.getLongitude(), location.getLatitude());

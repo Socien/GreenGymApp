@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Greengym">
-        <activity android:name=".Search_stretch"></activity>
+        <activity android:name=".Method_TurnWaist"></activity>
+        <activity android:name=".Method_Run" />
+        <activity android:name=".Search_stretch" />
         <activity android:name=".Search_all" />
         <activity android:name=".Search_down" />
         <activity android:name=".Search_up" />

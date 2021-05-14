@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
 
 public class IntroActivity extends AppCompatActivity {
 
@@ -22,8 +21,8 @@ public class IntroActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable(){
             @Override
             public void run(){
-                Intent i = new Intent(IntroActivity.this, MainActivity.class);
-                startActivity(i);
+                Intent intent = new Intent(IntroActivity.this, MainActivity.class);
+                startActivity(intent);
                 finish();
             }
         }, 3000);

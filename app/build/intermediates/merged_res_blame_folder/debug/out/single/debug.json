@@ -1,11 +1,19 @@
 [
     {
-        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method__turn_waist.xml.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_method__turn_waist.xml"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_down.xml.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_search_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method__run.xml.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_method__run.xml"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\drawable_green_gym.xml.flat",
@@ -40,12 +48,20 @@
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_youtube.png.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\drawable-v24\\youtube.png"
+    },
+    {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\drawable_green_button.xml.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\drawable\\green_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_sound.png.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\drawable-v24\\sound.png"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -124,16 +140,16 @@
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_rate.xml"
     },
     {
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_pin.png.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\drawable-v24\\pin.png"
+    },
+    {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
-    },
-    {
-        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_pin.png.flat",
-        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\drawable-v24\\pin.png"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method2.xml.flat",

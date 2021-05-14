@@ -34,6 +34,7 @@
                 android:textStyle="bold" />
 
             <Button
+                android:id="@+id/turnwaist"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="170dp"
@@ -142,6 +143,7 @@
                 android:textStyle="bold" />
 
             <Button
+                android:id="@+id/run"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="170dp"

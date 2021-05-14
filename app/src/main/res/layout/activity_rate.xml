@@ -58,7 +58,8 @@
             android:layout_marginTop="140dp"
             android:text="총 운동시간"
             android:textColor="@color/black"
-            android:textSize="22dp" />
+            android:textSize="22dp"
+            android:textStyle="bold"/>
 
         <View
             android:layout_width="match_parent"
@@ -85,7 +86,8 @@
             android:layout_marginTop="250dp"
             android:text="기록"
             android:textColor="@color/black"
-            android:textSize="22dp" />
+            android:textSize="22dp"
+            android:textStyle="bold"/>
 
         <View
             android:layout_width="match_parent"
@@ -98,7 +100,7 @@
         <TextView
             android:id="@+id/record"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="123dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="300dp"
             android:text=""

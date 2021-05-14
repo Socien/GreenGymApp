@@ -6,11 +6,10 @@
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="30" />
+        android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
@@ -23,6 +22,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Greengym" >
+        <activity android:name="com.example.greengym.Method_TurnWaist" />
+        <activity android:name="com.example.greengym.Method_Run" />
         <activity android:name="com.example.greengym.Search_stretch" />
         <activity android:name="com.example.greengym.Search_all" />
         <activity android:name="com.example.greengym.Search_down" />
