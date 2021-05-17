@@ -2,10 +2,13 @@ package com.example.greengym;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.Manifest;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.text.Editable;
@@ -19,7 +22,7 @@ import java.io.InputStream;
 public class Report extends AppCompatActivity {
 
     private EditText content;
-    private ImageView image;
+    private ImageView image = null;
     private Button add, next;
 
     @Override
@@ -37,21 +40,23 @@ public class Report extends AppCompatActivity {
         next = (Button) findViewById(R.id.report_next);
         next.setEnabled(false); //버튼 비활성화
 
-        //신고 내용
         content.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) { }
-
-            @Override
-            public void afterTextChanged(Editable s) {
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if(s.length() > 9){
                     next.setEnabled(true);
                     next.setBackgroundColor(Color.parseColor("#1EAE0E"));
                 }
+                else{
+                    next.setEnabled(false);
+                    next.setBackgroundColor(Color.parseColor("#70A6A1A1"));
+                }
             }
+            @Override
+            public void afterTextChanged(Editable s) { }
         });
 
         //사진 추가 버튼

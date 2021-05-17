@@ -1,8 +1,8 @@
-com/example/greengym/Report.java
- com.example.greengym.Report
- com.example.greengym.Report$1
- com.example.greengym.Report$2
- com.example.greengym.Report$3
+com/example/greengym/Method.java
+ com.example.greengym.Method
+ com.example.greengym.Method$1
+ com.example.greengym.Method$2
+ com.example.greengym.Method$3
 com/example/greengym/Search_Map.java
  com.example.greengym.Search_Map
 com/example/greengym/Search_byEquip.java
@@ -27,6 +27,16 @@ com/example/greengym/Rate_Statistic.java
  com.example.greengym.Rate_Statistic
 com/example/greengym/BuildConfig.java
  com.example.greengym.BuildConfig
+com/example/greengym/Method_TurnWaist.java
+ com.example.greengym.Method_TurnWaist
+ com.example.greengym.Method_TurnWaist$1
+ com.example.greengym.Method_TurnWaist$2
+ com.example.greengym.Method_TurnWaist$3
+com/example/greengym/Method_Run.java
+ com.example.greengym.Method_Run
+ com.example.greengym.Method_Run$1
+ com.example.greengym.Method_Run$2
+ com.example.greengym.Method_Run$3
 com/example/greengym/Search_stretch.java
  com.example.greengym.Search_stretch
  com.example.greengym.Search_stretch$1
@@ -34,17 +44,6 @@ com/example/greengym/Search_stretch.java
  com.example.greengym.Search_stretch$3
  com.example.greengym.Search_stretch$4
  com.example.greengym.Search_stretch$5
-com/example/greengym/Report_Location.java
- com.example.greengym.Report_Location
- com.example.greengym.Report_Location$1
- com.example.greengym.Report_Location$2
- com.example.greengym.Report_Location$3
- com.example.greengym.Report_Location$3$1
-com/example/greengym/Method_Run.java
- com.example.greengym.Method_Run
- com.example.greengym.Method_Run$1
- com.example.greengym.Method_Run$2
- com.example.greengym.Method_Run$3
 com/example/greengym/Search.java
  com.example.greengym.Search
  com.example.greengym.Search$1
@@ -77,19 +76,20 @@ com/example/greengym/Rate.java
  com.example.greengym.Rate$4
  com.example.greengym.Rate$timeThread
  com.example.greengym.Rate$timeThread$1
+com/example/greengym/Report_Location.java
+ com.example.greengym.Report_Location
+ com.example.greengym.Report_Location$1
+ com.example.greengym.Report_Location$2
+ com.example.greengym.Report_Location$3
+ com.example.greengym.Report_Location$3$1
 com/example/greengym/MainActivity.java
  com.example.greengym.MainActivity
  com.example.greengym.MainActivity$1
  com.example.greengym.MainActivity$2
  com.example.greengym.MainActivity$3
  com.example.greengym.MainActivity$4
-com/example/greengym/Method.java
- com.example.greengym.Method
- com.example.greengym.Method$1
- com.example.greengym.Method$2
- com.example.greengym.Method$3
-com/example/greengym/Method_TurnWaist.java
- com.example.greengym.Method_TurnWaist
- com.example.greengym.Method_TurnWaist$1
- com.example.greengym.Method_TurnWaist$2
- com.example.greengym.Method_TurnWaist$3
+com/example/greengym/Report.java
+ com.example.greengym.Report
+ com.example.greengym.Report$1
+ com.example.greengym.Report$2
+ com.example.greengym.Report$3

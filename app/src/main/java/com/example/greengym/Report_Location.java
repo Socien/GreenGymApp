@@ -17,7 +17,6 @@ import android.widget.Spinner;
 
 public class Report_Location extends AppCompatActivity {
 
-
     private EditText name, phone;
     private Spinner city, gu;
     private Button ok;
@@ -38,39 +37,51 @@ public class Report_Location extends AppCompatActivity {
         ok = (Button) findViewById(R.id.report_ok);
         ok.setEnabled(false); //버튼 비활성화
 
-        //이름 입력
+        //이름
         name.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) { }
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                String phone_check = phone.getText().toString();
 
-            @Override
-            public void afterTextChanged(Editable s) {
-                if(s.length() > 1){
+                if((phone_check).length() > 10 && s.length() > 1){
                     ok.setEnabled(true);
                     ok.setBackgroundColor(Color.parseColor("#1EAE0E"));
                 }
+                else if((phone_check).length() < 11 || s.length() < 2){
+                    ok.setEnabled(false);
+                    ok.setBackgroundColor(Color.parseColor("#70A6A1A1"));
+                }
             }
+            @Override
+            public void afterTextChanged(Editable s) { }
         });
 
-        //전화번호 입력
+        //전화번호
         phone.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) { }
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                String name_check = name.getText().toString();
 
-            @Override
-            public void afterTextChanged(Editable s) {
-                if(s.length() > 10){
+                if((name_check).length() > 1 && s.length() > 10){
                     ok.setEnabled(true);
                     ok.setBackgroundColor(Color.parseColor("#1EAE0E"));
                 }
+                else if((name_check).length() < 2 || s.length() < 11){
+                    ok.setEnabled(false);
+                    ok.setBackgroundColor(Color.parseColor("#70A6A1A1"));
+                }
             }
+            @Override
+            public void afterTextChanged(Editable s) { }
         });
+
+
 
         //시/도 선택
         ArrayAdapter cityAdapter = ArrayAdapter.createFromResource(this, R.array.cityArray, android.R.layout.simple_spinner_dropdown_item);
