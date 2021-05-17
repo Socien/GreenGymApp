@@ -40,7 +40,7 @@
 
         <Spinner
             android:id="@+id/city_spinner"
-            android:layout_width="310dp"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="130dp"
@@ -60,7 +60,7 @@
 
         <Spinner
             android:id="@+id/gu_spinner"
-            android:layout_width="310dp"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="240dp"
@@ -80,7 +80,7 @@
 
         <EditText
             android:id="@+id/name"
-            android:layout_width="310dp"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="350dp"
@@ -100,7 +100,7 @@
 
         <EditText
             android:id="@+id/phone"
-            android:layout_width="310dp"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="460dp"
@@ -111,10 +111,11 @@
 
         <Button
             android:id="@+id/report_ok"
-            android:layout_width="140dp"
+            android:layout_width="130dp"
             android:layout_height="45dp"
-            android:layout_marginLeft="220dp"
-            android:layout_marginTop="610dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="bottom"
             android:text="제출"
             android:background="@color/gray"
             android:textColor="@color/white"

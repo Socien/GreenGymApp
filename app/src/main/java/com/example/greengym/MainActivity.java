@@ -7,10 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button search, method, rate, report;
+    private long lastback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,5 +63,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    @Override
+    public void onBackPressed(){
+        if(System.currentTimeMillis() - lastback < 2000){
+            finish();
+            return;
+        }
+        Toast.makeText(this, "'뒤로' 버튼을 한 번 더 누르면 앱이 종료됩니다.", Toast.LENGTH_SHORT).show();
+        lastback = System.currentTimeMillis();
     }
 }

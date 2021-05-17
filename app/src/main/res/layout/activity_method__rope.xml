@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".Method_Rope">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="310dp"
+            android:text="로프당기기"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="360dp"
+            android:layout_height="285dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="370dp"
+            android:text="양손으로 손잡이를 잡고 위 아래로 줄을 당깁니다.\n팔과 어깨에 힘을 주어 반복 운동을 합니다.\n\n운동량은 7회에서 10회가 적당합니다.\n\n어깨와 팔꿈치 유연성을 증가시키고 혈액 순환을 도와줍니다. 오십견 예방에 효과적입니다."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/sound"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="304dp"
+            android:background="@drawable/sound" />
+
+        <Button
+            android:id="@+id/youtube"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="315dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/youtube" />
+    </FrameLayout>
+
+</LinearLayout>

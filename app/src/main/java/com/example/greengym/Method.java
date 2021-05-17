@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class Method extends AppCompatActivity {
 
-    private Button turnwaist, run, next;
+    private Button turnwaist, walkingair, surfing, uppermuscle, run, next;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,9 @@ public class Method extends AppCompatActivity {
         actionbar.setTitle("사용 방법");
 
         turnwaist = (Button) findViewById(R.id.turnwaist);
+        walkingair = (Button) findViewById(R.id.walkingair);
+        surfing = (Button) findViewById(R.id.surfing);
+        uppermuscle = (Button) findViewById(R.id.uppermuscle);
         run = (Button) findViewById(R.id.run);
         next = (Button) findViewById(R.id.next);
 
@@ -30,6 +33,33 @@ public class Method extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(getApplicationContext(), Method_TurnWaist.class);
+                startActivity(intent);
+            }
+        });
+
+        //공중걷기
+        walkingair.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), Method_WalkingAir.class);
+                startActivity(intent);
+            }
+        });
+
+        //파도타기
+        surfing.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), Method_Surfing.class);
+                startActivity(intent);
+            }
+        });
+
+        //상체근육풀기
+        uppermuscle.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), Method_UpperMuscle.class);
                 startActivity(intent);
             }
         });

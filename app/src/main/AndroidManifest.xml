@@ -13,7 +13,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Greengym">
-        <activity android:name=".Method_TurnWaist"></activity>
+        <activity android:name=".Method_LiftWeight"></activity>
+        <activity android:name=".Method_Rope" />
+        <activity android:name=".Method_Shoulder" />
+        <activity android:name=".Method_SitUp" />
+        <activity android:name=".Method_PushLegs" />
+        <activity android:name=".Method_UpperMuscle" />
+        <activity android:name=".Method_WalkingAir" />
+        <activity android:name=".Method_Surfing" />
+        <activity android:name=".Method_TurnWaist" />
         <activity android:name=".Method_Run" />
         <activity android:name=".Search_stretch" />
         <activity android:name=".Search_all" />

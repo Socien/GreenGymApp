@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:background="@color/green"
     tools:context=".IntroActivity">
 
-    <TextView
+    <Button
         android:layout_width="330dp"
         android:layout_height="100dp"
-        android:background="@drawable/green_gym"
-        android:layout_marginLeft="32dp"
+        android:layout_marginTop="300dp"
         android:layout_gravity="center"
-        android:gravity="center"
+        android:background="@drawable/green_gym"
         android:text="Green Gym"
         android:textColor="@color/green"
         android:textSize="55dp"
+        android:textAllCaps="false"
         android:textStyle="bold" />
 
 </LinearLayout>

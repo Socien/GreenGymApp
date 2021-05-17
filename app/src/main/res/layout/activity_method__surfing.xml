@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".Method_Surfing">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="310dp"
+            android:text="파도타기"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="360dp"
+            android:layout_height="285dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="370dp"
+            android:text="손으로 손잡이를 잡고 양발을 가지런히 발판 위에 올린 후 허리와 상체의 움직임을 최대한 적게 하고 양발을 좌우로 흔들어 줍니다.\n\n횟수는 7회에서 10회가 적당합니다.\n\n상체를 움직이면 허리 인대까지 자극이 전달되지 않아 효과가 떨어집니다.\n\n옆구리가 당기는 느낌이 들 정도만 하체를 움직이는 것이 좋습니다."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/sound"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="304dp"
+            android:background="@drawable/sound" />
+
+        <Button
+            android:id="@+id/youtube"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="315dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/youtube" />
+    </FrameLayout>
+
+</LinearLayout>

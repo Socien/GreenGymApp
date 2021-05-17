@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".Method_WalkingAir">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="310dp"
+            android:text="공중걷기"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="360dp"
+            android:layout_height="307dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="370dp"
+            android:text="손잡이를 잡고 공중에서 두 다리를 번갈아 가면서 걷습니다. \n\n손잡이를 잡고 두 발을 발판위에 올려 똑바로 선 후 평지를 걷듯이 두 발을 앞뒤로 흔듭니다.\n\n운동시간은 5분에서 10분이 적당합니다.\n\n상체를 구부린 상태에서 움직이면 근육을 전체적으로 사용하지 못해 운동 효과가 떨어집니다."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/sound"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="304dp"
+            android:background="@drawable/sound" />
+
+        <Button
+            android:id="@+id/youtube"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="315dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/youtube" />
+    </FrameLayout>
+
+</LinearLayout>

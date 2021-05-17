@@ -1915,6 +1915,7 @@ id largeLabel
 id layout
 id left
 id leftToRight
+id liftweight
 id line1
 id line3
 id linear
@@ -2007,6 +2008,7 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id pushlegs
 id radio
 id rate
 id ratio
@@ -2021,6 +2023,7 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id rope
 id rounded
 id row_index_key
 id run
@@ -2049,10 +2052,12 @@ id select_dialog_listview
 id selected
 id selection_type
 id shortcut
+id shoulder
 id showCustom
 id showHome
 id showTitle
 id sin
+id situp
 id skipCollapsed
 id slide
 id smallLabel
@@ -2082,6 +2087,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id surfing
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -2132,9 +2138,11 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id uppermuscle
 id useLogo
 id view_offset_helper
 id visible
+id walkingair
 id withText
 id withinBounds
 id wrap
@@ -2205,8 +2213,16 @@ layout activity_intro
 layout activity_main
 layout activity_method
 layout activity_method2
+layout activity_method__lift_weight
+layout activity_method__push_legs
+layout activity_method__rope
 layout activity_method__run
+layout activity_method__shoulder
+layout activity_method__sit_up
+layout activity_method__surfing
 layout activity_method__turn_waist
+layout activity_method__upper_muscle
+layout activity_method__walking_air
 layout activity_rate
 layout activity_rate__statistic
 layout activity_report
