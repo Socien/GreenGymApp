@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private Button search, method, rate, report;
-    private long lastback;
+    private long backTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,11 +66,15 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     public void onBackPressed(){
-        if(System.currentTimeMillis() - lastback < 2000){
+        if(System.currentTimeMillis() > backTime + 2000){
+            backTime = System.currentTimeMillis();
+            Toast.makeText(this, "'뒤로' 버튼을 한 번 더 누르시면 종료됩니다.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if(System.currentTimeMillis() <= backTime + 2000){
             finish();
             return;
         }
-        Toast.makeText(this, "'뒤로' 버튼을 한 번 더 누르면 앱이 종료됩니다.", Toast.LENGTH_SHORT).show();
-        lastback = System.currentTimeMillis();
     }
 }

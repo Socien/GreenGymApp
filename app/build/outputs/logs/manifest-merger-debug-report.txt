@@ -83,7 +83,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\YY
 	android:label
 		ADDED from C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:13:9-58
 	android:icon
 		ADDED from C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
