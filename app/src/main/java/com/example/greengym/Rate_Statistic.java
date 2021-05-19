@@ -88,10 +88,4 @@ public class Rate_Statistic extends AppCompatActivity {
         chart.setDescription("");
         chart.setData(data);
     }
-
-    @Override
-    public void onBackPressed(){
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
-    }
 }
