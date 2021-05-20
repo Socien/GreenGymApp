@@ -2,7 +2,6 @@ package com.example.greengym;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -13,7 +12,6 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
-
 import java.util.ArrayList;
 
 public class Rate_Statistic extends AppCompatActivity {
@@ -43,12 +41,12 @@ public class Rate_Statistic extends AppCompatActivity {
         week.add("일");
         XAxis x = chart.getXAxis();
         x.setPosition(XAxis.XAxisPosition.BOTTOM);
-        x.setTextSize(15);
+        x.setTextSize(15f);
         x.setDrawGridLines(false);
 
         //y축 왼쪽
         YAxis yL = chart.getAxisLeft();
-        yL.setTextSize(15);
+        yL.setTextSize(15f);
         yL.setSpaceBottom(0);
         yL.enableGridDashedLine(10, 15, 0);
         yL.setAxisMinValue(0);
@@ -77,8 +75,9 @@ public class Rate_Statistic extends AppCompatActivity {
         entry.add(new BarEntry(15f, 4));
         entry.add(new BarEntry(18f, 5));
         entry.add(new BarEntry(60f, 6));
-        BarDataSet dataSet = new BarDataSet(entry, "운동한 시간");
-        dataSet.setDrawValues(false);
+        BarDataSet dataSet = new BarDataSet(entry, "");
+        dataSet.setDrawValues(true);
+        dataSet.setValueTextSize(15f);
         dataSet.setColors(ColorTemplate.createColors(color));
         BarData data = new BarData(week, dataSet);
 
@@ -89,3 +88,4 @@ public class Rate_Statistic extends AppCompatActivity {
         chart.setData(data);
     }
 }
+
