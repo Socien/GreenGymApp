@@ -1,14 +1,12 @@
 package com.example.greengym;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -19,14 +17,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Calendar;
+
 public class Rate extends AppCompatActivity {
 
     private Button start, stop, statistic;
     private TextView time, max_record, record;
+    private long startTime, sumTime = 0;
 
-    long startTime;
-    long sumTime = 0;
-    private int i = 1;
+    Rate_DB myDB;
+    SQLiteDatabase sql;
+    Cursor cursor;
+    boolean checkDB = false;
+    int i = 1;
+    String result;
+
+    Calendar cal = Calendar.getInstance();
+    int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +56,19 @@ public class Rate extends AppCompatActivity {
 
         //기록 스크롤
         record.setMovementMethod(new ScrollingMovementMethod());
+
+        //DB 연결
+        myDB = new Rate_DB(this);
+        cursor = myDB.getReadableDatabase().rawQuery("Select week from Rate", null);
+        makeDB(cursor);
+
+        //총 운동량 표시
+        sql = myDB.getReadableDatabase();
+        cursor = sql.rawQuery("Select time From Rate Where week ='" + dayOfWeek + "'", null);
+        while(cursor.moveToNext())
+            sumTime = cursor.getLong(0);
+        result = String.format("%02d : %02d : %02d", (sumTime / 1000) / 60, (sumTime / 1000) % 60, (sumTime % 1000) / 10);
+        max_record.setText(result);
 
         //운동량 통계
         statistic.setOnClickListener(new View.OnClickListener(){
@@ -79,16 +99,16 @@ public class Rate extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //기록
-                String result1 = String.format("%d  |  " + time.getText().toString() + "\n" + record.getText() , i);
-                record.setText(result1);
+                result = String.format("%d  |  " + time.getText().toString() + "\n" + record.getText() , i);
+                record.setText(result);
                 i++;
 
                 //멈춤
                 Timer.removeMessages(0);
                 long nowTime = SystemClock.elapsedRealtime();
                 sumTime += (nowTime - startTime);
-                String result2 = String.format("%02d : %02d : %02d", (sumTime / 1000) / 60, (sumTime / 1000) % 60, (sumTime % 1000) / 10);
-                max_record.setText(result2);
+                result = String.format("%02d : %02d : %02d", (sumTime / 1000) / 60, (sumTime / 1000) % 60, (sumTime % 1000) / 10);
+                max_record.setText(result);
                 time.setText("00 : 00 : 00");
 
                 //버튼
@@ -96,6 +116,10 @@ public class Rate extends AppCompatActivity {
                 stop.setBackgroundColor(Color.parseColor("#70A6A1A1"));
                 start.setEnabled(true);
                 start.setBackgroundColor(Color.parseColor("#1EAE0E"));
+
+                //DB
+                sql = myDB.getWritableDatabase();
+                sql.execSQL("Update Rate Set time = '" + sumTime + "' where week = '" + dayOfWeek + "';");
             }
         });
     }
@@ -111,5 +135,20 @@ public class Rate extends AppCompatActivity {
             Timer.sendEmptyMessage(0);
         }
     };
+
+    //DB 연결 메소드
+    public void makeDB(Cursor cursor){
+        while(cursor.moveToNext()){
+            if(cursor.getInt(0) == 1){
+                checkDB = true;
+                break;
+            }
+        }
+        if(checkDB == false) {
+            sql = myDB.getWritableDatabase();
+            for (int i = 1; i < 8; i++)
+                sql.execSQL("Insert into Rate Values('" + i + "','" + null + "');");
+        }
+    }
 }
 

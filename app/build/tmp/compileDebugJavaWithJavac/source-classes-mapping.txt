@@ -131,6 +131,8 @@ com/example/greengym/Search_up.java
  com.example.greengym.Search_up$7
  com.example.greengym.Search_up$8
  com.example.greengym.Search_up$9
+com/example/greengym/Rate_DB.java
+ com.example.greengym.Rate_DB
 com/example/greengym/Rate.java
  com.example.greengym.Rate
  com.example.greengym.Rate$1

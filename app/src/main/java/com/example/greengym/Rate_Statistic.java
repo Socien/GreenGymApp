@@ -2,6 +2,9 @@ package com.example.greengym;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -17,6 +20,9 @@ import java.util.ArrayList;
 public class Rate_Statistic extends AppCompatActivity {
 
     private BarChart chart;
+    Rate_DB myDB;
+    SQLiteDatabase sql;
+    Cursor cursor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +38,8 @@ public class Rate_Statistic extends AppCompatActivity {
 
         //x축
         ArrayList week = new ArrayList();
-        week.add("월");
-        week.add("화");
-        week.add("수");
-        week.add("목");
-        week.add("금");
-        week.add("토");
-        week.add("일");
+        week.add("일"); week.add("월"); week.add("화"); week.add("수");
+        week.add("목"); week.add("금"); week.add("토");
         XAxis x = chart.getXAxis();
         x.setPosition(XAxis.XAxisPosition.BOTTOM);
         x.setTextSize(15f);
@@ -50,6 +51,7 @@ public class Rate_Statistic extends AppCompatActivity {
         yL.setSpaceBottom(0);
         yL.enableGridDashedLine(10, 15, 0);
         yL.setAxisMinValue(0);
+        yL.setAxisMaxValue(50);
 
         //y축 오른쪽 비활성화
         YAxis yR = chart.getAxisRight();
@@ -68,14 +70,20 @@ public class Rate_Statistic extends AppCompatActivity {
 
         //데이터
         ArrayList entry = new ArrayList();
-        entry.add(new BarEntry(15f, 0));
-        entry.add(new BarEntry(55f, 1));
-        entry.add(new BarEntry(45f, 2));
-        entry.add(new BarEntry(35f, 3));
-        entry.add(new BarEntry(15f, 4));
-        entry.add(new BarEntry(18f, 5));
-        entry.add(new BarEntry(60f, 6));
-        BarDataSet dataSet = new BarDataSet(entry, "");
+        myDB = new Rate_DB(this);
+        sql = myDB.getReadableDatabase();
+        cursor = sql.rawQuery("Select * From Rate", null);
+        int i = 0;
+        while(cursor.moveToNext()){
+            long sumTime = cursor.getLong(1);
+            double min = (sumTime / 1000) / 60;
+            double sec = (sumTime / 1000.0 % 60.0) / 100.0;
+            double result = (min + sec);
+            entry.add(new BarEntry((float) result, i));
+            i++;
+        }
+
+        BarDataSet dataSet = new BarDataSet(entry, "운동량");
         dataSet.setDrawValues(true);
         dataSet.setValueTextSize(15f);
         dataSet.setColors(ColorTemplate.createColors(color));
@@ -88,4 +96,3 @@ public class Rate_Statistic extends AppCompatActivity {
         chart.setData(data);
     }
 }
-
