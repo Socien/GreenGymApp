@@ -64,7 +64,7 @@ public class Method_TurnWaist extends AppCompatActivity {
         youtube.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                String url = "https://www.youtube.com/watch?v=ktjJ8xtt2Hg";
+                String url = "https://www.youtube.com/watch?v=cg80jKYgFps";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
             }
