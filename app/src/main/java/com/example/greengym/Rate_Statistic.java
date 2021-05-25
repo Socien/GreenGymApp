@@ -14,7 +14,12 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.formatter.ValueFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.github.mikephil.charting.utils.ViewPortHandler;
+
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Rate_Statistic extends AppCompatActivity {
@@ -23,6 +28,7 @@ public class Rate_Statistic extends AppCompatActivity {
     Rate_DB myDB;
     SQLiteDatabase sql;
     Cursor cursor;
+    double min, sec, result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,9 +82,9 @@ public class Rate_Statistic extends AppCompatActivity {
         int i = 0;
         while(cursor.moveToNext()){
             long sumTime = cursor.getLong(1);
-            double min = (sumTime / 1000) / 60;
-            double sec = (sumTime / 1000.0 % 60.0) / 100.0;
-            double result = (min + sec);
+            min = (sumTime / 1000) / 60;
+            sec = (sumTime / 1000.0 % 60.0) / 100.0;
+            result = (min + sec);
             entry.add(new BarEntry((float) result, i));
             i++;
         }
@@ -86,6 +92,7 @@ public class Rate_Statistic extends AppCompatActivity {
         BarDataSet dataSet = new BarDataSet(entry, "운동량");
         dataSet.setDrawValues(true);
         dataSet.setValueTextSize(15f);
+        dataSet.setValueFormatter(new myFormatter());
         dataSet.setColors(ColorTemplate.createColors(color));
         BarData data = new BarData(week, dataSet);
 
@@ -94,5 +101,19 @@ public class Rate_Statistic extends AppCompatActivity {
         chart.setDoubleTapToZoomEnabled(false);
         chart.setDescription("");
         chart.setData(data);
+    }
+
+    public class myFormatter implements ValueFormatter{
+
+        private DecimalFormat decimal;
+
+        public myFormatter(){
+            decimal = new DecimalFormat("##0.##");
+        }
+
+        @Override
+        public String getFormattedValue(float value, Entry entry, int dataSetIndex, ViewPortHandler viewPortHandler) {
+            return decimal.format(value) + "분";
+        }
     }
 }

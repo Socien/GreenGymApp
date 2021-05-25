@@ -10,7 +10,8 @@ import android.widget.Button;
 
 public class Method extends AppCompatActivity {
 
-    private Button turnwaist, walkingair, surfing, uppermuscle, run, next;
+    private Button turnwaist, walkingair, surfing, uppermuscle, run,
+            pushlegs, situp, shoulder, rope, liftweight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,11 @@ public class Method extends AppCompatActivity {
         surfing = (Button) findViewById(R.id.surfing);
         uppermuscle = (Button) findViewById(R.id.uppermuscle);
         run = (Button) findViewById(R.id.run);
-        next = (Button) findViewById(R.id.next);
+        pushlegs = (Button) findViewById(R.id.pushlegs);
+        situp = (Button) findViewById(R.id.situp);
+        shoulder = (Button) findViewById(R.id.shoulder);
+        rope = (Button) findViewById(R.id.rope);
+        liftweight = (Button) findViewById(R.id.liftweight);
 
         //허리돌리기
         turnwaist.setOnClickListener(new View.OnClickListener(){
@@ -73,11 +78,47 @@ public class Method extends AppCompatActivity {
             }
         });
 
-        //다음 버튼
-        next.setOnClickListener(new View.OnClickListener(){
+        //오금펴기
+        pushlegs.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), Method2.class);
+                Intent intent = new Intent(getApplicationContext(), Method_PushLegs.class);
+                startActivity(intent);
+            }
+        });
+
+        //윗몸일으키기
+        situp.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), Method_SitUp.class);
+                startActivity(intent);
+            }
+        });
+
+        //어깨유연성운동
+        shoulder.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), Method_Shoulder.class);
+                startActivity(intent);
+            }
+        });
+
+        //로프당기기
+        rope.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), Method_Rope.class);
+                startActivity(intent);
+            }
+        });
+
+        //역기올리기
+        liftweight.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), Method_LiftWeight.class);
                 startActivity(intent);
             }
         });

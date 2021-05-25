@@ -38,7 +38,6 @@
         <activity android:name="com.example.greengym.Search_up" />
         <activity android:name="com.example.greengym.Search_Map" />
         <activity android:name="com.example.greengym.Search_byEquip" />
-        <activity android:name="com.example.greengym.Method2" />
         <activity android:name="com.example.greengym.Search" />
         <activity android:name="com.example.greengym.Rate_Statistic" />
         <activity android:name="com.example.greengym.Report_Location" />

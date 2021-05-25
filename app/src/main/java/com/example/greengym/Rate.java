@@ -60,7 +60,29 @@ public class Rate extends AppCompatActivity {
         //DB 연결
         myDB = new Rate_DB(this);
         cursor = myDB.getReadableDatabase().rawQuery("Select week from Rate", null);
-        makeDB(cursor);
+        while(cursor.moveToNext()){
+            if(cursor.getInt(0) == 1){
+                checkDB = true;
+                break;
+            }
+        }
+        if(checkDB == false) {
+            sql = myDB.getWritableDatabase();
+            for (int i = 1; i < 8; i++)
+                sql.execSQL("Insert into Rate Values('" + i + "','" + 0 + "');");
+        }
+
+        //일주일 초기화
+        if(dayOfWeek == 1){
+            cursor = myDB.getReadableDatabase().rawQuery("Select time From Rate Where week >'" + dayOfWeek + "'", null);
+            while(cursor.moveToNext())
+                sumTime += cursor.getLong(0);
+            if(sumTime > 0){
+                sql = myDB.getWritableDatabase();
+                for (int i = 1; i < 8; i++)
+                    sql.execSQL("Update Rate Set time = '" + 0 + "';");
+            }
+        }
 
         //총 운동량 표시
         sql = myDB.getReadableDatabase();
@@ -135,20 +157,4 @@ public class Rate extends AppCompatActivity {
             Timer.sendEmptyMessage(0);
         }
     };
-
-    //DB 연결 메소드
-    public void makeDB(Cursor cursor){
-        while(cursor.moveToNext()){
-            if(cursor.getInt(0) == 1){
-                checkDB = true;
-                break;
-            }
-        }
-        if(checkDB == false) {
-            sql = myDB.getWritableDatabase();
-            for (int i = 1; i < 8; i++)
-                sql.execSQL("Insert into Rate Values('" + i + "','" + null + "');");
-        }
-    }
 }
-

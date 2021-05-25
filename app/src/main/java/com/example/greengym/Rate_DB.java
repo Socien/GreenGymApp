@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class Rate_DB extends SQLiteOpenHelper {
 
     public Rate_DB(Context context){
-        super(context, "name", null, 1);
+        super(context, "gym", null, 1);
     }
 
     @Override
