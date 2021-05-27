@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_gym_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Greengym">
-        <activity android:name=".Method_LiftWeight"></activity>
+        <activity android:name=".Report"></activity>
+        <activity android:name=".Method_LiftWeight" />
         <activity android:name=".Method_Rope" />
         <activity android:name=".Method_Shoulder" />
         <activity android:name=".Method_SitUp" />
@@ -31,7 +32,6 @@
         <activity android:name=".Search_byEquip" />
         <activity android:name=".Search" />
         <activity android:name=".Rate_Statistic" />
-        <activity android:name=".Report" />
         <activity android:name=".Rate" />
         <activity android:name=".Method" />
         <activity android:name=".MainActivity" />

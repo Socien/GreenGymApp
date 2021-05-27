@@ -41,12 +41,6 @@ com/example/greengym/Method_TurnWaist.java
  com.example.greengym.Method_TurnWaist$3
 com/example/greengym/Rate_DB.java
  com.example.greengym.Rate_DB
-com/example/greengym/Report_Location.java
- com.example.greengym.Report_Location
- com.example.greengym.Report_Location$1
- com.example.greengym.Report_Location$2
- com.example.greengym.Report_Location$3
- com.example.greengym.Report_Location$3$1
 com/example/greengym/Search.java
  com.example.greengym.Search
  com.example.greengym.Search$1

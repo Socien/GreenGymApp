@@ -40,12 +40,12 @@
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\drawable\\green_button.xml"
     },
     {
-        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method__shoulder.xml.flat",
-        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_method__shoulder.xml"
-    },
-    {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method__sit_up.xml.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_method__sit_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method__shoulder.xml.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_method__shoulder.xml"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method__lift_weight.xml.flat",
@@ -80,16 +80,12 @@
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_gym_round.png"
     },
     {
-        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rate__statistic.xml.flat",
-        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_rate__statistic.xml"
-    },
-    {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_gym_foreground.png.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_gym_foreground.png"
     },
     {
-        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rate__statistic.xml.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_rate__statistic.xml"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_gym_foreground.png.flat",
@@ -98,6 +94,10 @@
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_gym_round.png.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_gym_round.png"
+    },
+    {
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
@@ -110,10 +110,6 @@
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_gym.png.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_gym.png"
-    },
-    {
-        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_report__location.xml.flat",
-        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_report__location.xml"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method__walking_air.xml.flat",
@@ -164,12 +160,12 @@
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\drawable-v24\\sound.png"
     },
     {
-        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method__push_legs.xml.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_method__push_legs.xml"
+    },
+    {
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_up.xml.flat",
@@ -196,12 +192,12 @@
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_search.xml"
     },
     {
-        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_report.xml.flat",
-        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_report.xml"
-    },
-    {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_gym_round.png.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_gym_round.png"
+    },
+    {
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_report.xml.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_report.xml"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method.xml.flat",

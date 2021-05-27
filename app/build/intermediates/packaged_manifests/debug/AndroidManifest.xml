@@ -22,6 +22,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Greengym" >
+        <activity android:name="com.example.greengym.Report" />
         <activity android:name="com.example.greengym.Method_LiftWeight" />
         <activity android:name="com.example.greengym.Method_Rope" />
         <activity android:name="com.example.greengym.Method_Shoulder" />
@@ -40,8 +41,6 @@
         <activity android:name="com.example.greengym.Search_byEquip" />
         <activity android:name="com.example.greengym.Search" />
         <activity android:name="com.example.greengym.Rate_Statistic" />
-        <activity android:name="com.example.greengym.Report_Location" />
-        <activity android:name="com.example.greengym.Report" />
         <activity android:name="com.example.greengym.Rate" />
         <activity android:name="com.example.greengym.Method" />
         <activity android:name="com.example.greengym.MainActivity" />

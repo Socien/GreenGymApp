@@ -50,8 +50,6 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
-array cityArray
-array guArray
 array park_nameArray
 attr actionBarDivider
 attr actionBarItemBackground
@@ -1813,7 +1811,6 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
-id city_spinner
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -1888,7 +1885,6 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
-id gu_spinner
 id guideline
 id header_title
 id hideable
@@ -2014,7 +2010,6 @@ id ratio
 id record
 id rectangles
 id report
-id report_content
 id report_ok
 id reverseSawtooth
 id right
@@ -2223,7 +2218,6 @@ layout activity_method__walking_air
 layout activity_rate
 layout activity_rate__statistic
 layout activity_report
-layout activity_report__location
 layout activity_search
 layout activity_search__map
 layout activity_search_all
