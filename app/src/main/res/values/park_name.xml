@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="park_nameArray">
+        <item>공원을 선택해주세요.</item>
+        <item>가중나무어린이공원</item>
+        <item>개나리어린이공원</item>
+        <item>광나루로수변계류</item>
+        <item>광남그린웨이 자투리땅</item>
+        <item>광진숲나루</item>
+        <item>구둘어린이공원</item>
+        <item>구의2동마을마당</item>
+        <item>구의2동제2마을마당</item>
+        <item>구의어린이공원</item>
+        <item>구의유수지</item>
+        <item>군자동마을마당</item>
+        <item>군자어린이공원</item>
+        <item>금모래어린이공원</item>
+        <item>긴고랑어린이공원</item>
+        <item>남일어린이공원</item>
+        <item>노유산어린이공원</item>
+        <item>능동소공원</item>
+        <item>대동마을공원</item>
+        <item>동자어린이공원</item>
+        <item>명성어린이공원</item>
+        <item>목련어린이공원</item>
+        <item>무궁화어린이공원</item>
+        <item>배나무터어린이공원</item>
+        <item>산마루어린이공원</item>
+        <item>신양쉼터</item>
+        <item>약초원소공원</item>
+        <item>약초원어린이공원</item>
+        <item>양마쌈지쉼터</item>
+        <item>양마장어린이공원</item>
+        <item>언덕배기어린이공원</item>
+        <item>온달어린이공원</item>
+        <item>용마산근린공원</item>
+        <item>자마장어린이공원</item>
+        <item>자양유수지</item>
+        <item>자양초자연학습장 자투리땅</item>
+        <item>장독골어린이공원</item>
+        <item>장미어린이공원</item>
+        <item>정말어린이공원</item>
+        <item>중곡1동마을마당</item>
+        <item>중곡3동마을마당</item>
+        <item>중곡어린이공원</item>
+        <item>중랑천</item>
+        <item>평강어린이공원</item>
+        <item>푸른동산어린이공원</item>
+        <item>한마음어린이공원</item>
+        <item>한아름어린이공원</item>
+        <item>해오름어린이공원</item>
+        <item>햇님어린이공원</item>
+        <item>홍련산의소공원</item>
+        <item>화양동제2마을마당</item>
+        <item>화양어린이공원</item>
+    </string-array>
+</resources>

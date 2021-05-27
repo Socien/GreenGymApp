@@ -14,9 +14,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class Report_Location extends AppCompatActivity {
 
+    private TextView date;
     private EditText name, phone;
     private Spinner city, gu;
     private Button ok;
