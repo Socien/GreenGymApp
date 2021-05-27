@@ -40,12 +40,12 @@
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\drawable\\green_button.xml"
     },
     {
-        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method__sit_up.xml.flat",
-        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_method__sit_up.xml"
-    },
-    {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method__shoulder.xml.flat",
         "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_method__shoulder.xml"
+    },
+    {
+        "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method__sit_up.xml.flat",
+        "source": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\src\\main\\res\\layout\\activity_method__sit_up.xml"
     },
     {
         "merged": "C:\\Users\\YYUM\\Desktop\\project\\greengym\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_method__lift_weight.xml.flat",

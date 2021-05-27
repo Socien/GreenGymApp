@@ -31,7 +31,6 @@
         <activity android:name=".Search_byEquip" />
         <activity android:name=".Search" />
         <activity android:name=".Rate_Statistic" />
-        <activity android:name=".Report_Location" />
         <activity android:name=".Report" />
         <activity android:name=".Rate" />
         <activity android:name=".Method" />
