@@ -17,7 +17,18 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONObject;
+
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Report extends AppCompatActivity {
 
@@ -71,7 +82,9 @@ public class Report extends AppCompatActivity {
                 }
             }
             @Override
-            public void afterTextChanged(Editable s) { }
+            public void afterTextChanged(Editable s) {
+
+            }
         });
 
         //이름
@@ -122,6 +135,23 @@ public class Report extends AppCompatActivity {
         ok.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+
+                //통신
+                sendRequest();
+
+            }
+        });
+    }
+    public void sendRequest(){
+
+        String url = "http://15.164.250.186:8000/api/v1/report/insert";
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+                Request.Method.POST, url, null, new Response.Listener<JSONObject>() {
+
+            @Override
+            public void onResponse(JSONObject response){
+
                 AlertDialog.Builder log = new AlertDialog.Builder(Report.this);
                 log.setMessage("신고가 접수되었습니다.");
                 log.setPositiveButton("확인", new DialogInterface.OnClickListener() {
@@ -133,6 +163,30 @@ public class Report extends AppCompatActivity {
                 });
                 log.show();
             }
-        });
+
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error){
+                //textView.append("에러 -> " + error.getMessage());
+
+            }
+        }) {
+            @Override //Post방식
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("p_name", park.getSelectedItem().toString());
+                params.put("r_text", content.getText().toString());
+                params.put("r_phone", phone.getText().toString());
+                params.put("r_name", name.getText().toString());
+                params.put("r_date", date.getText().toString());
+                return params;
+            }
+        };
+
+        jsonObjectRequest.setShouldCache(false); //이전 결과 있어도 새로 요청하여 응답을 보여준다.
+        AppHelper.requestQueue = Volley.newRequestQueue(this); // requestQueue 초기화 필수
+        AppHelper.requestQueue.add(jsonObjectRequest);
+
     }
 }

@@ -8,16 +8,38 @@ import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
 import android.Manifest;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import com.skt.Tmap.TMapData;
 import com.skt.Tmap.TMapMarkerItem;
 import com.skt.Tmap.TMapGpsManager;
 import com.skt.Tmap.TMapPoint;
+import com.skt.Tmap.TMapPolyLine;
 import com.skt.Tmap.TMapView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Search_Map extends AppCompatActivity {
 
-    TMapView tMapView = null;
-    TMapGpsManager tMapGPS = null;
+    //TMapGpsManager tMapGPS = null;
+    TMapView tMapView;
+    ArrayList<TMapPoint> alTMapPoint = new ArrayList<>();
+    ArrayList<String> Parkname = new ArrayList<>();
+    Bitmap bitmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,52 +59,104 @@ public class Search_Map extends AppCompatActivity {
         tMapView.setMapType(TMapView.MAPTYPE_STANDARD);
         tMapView.setLanguage(TMapView.LANGUAGE_KOREAN);
 
-        LinearLayout Tmap = (LinearLayout)findViewById(R.id.Tmap);
+        tMapView.setCenterPoint(127.090039, 37.538517, true);
+        tMapView.setLocationPoint(127.090039, 37.538517);
+        tMapView.setIconVisibility(true);
+
+        LinearLayout Tmap = (LinearLayout) findViewById(R.id.Tmap);
         Tmap.addView(tMapView);
 
-        //GPS
-        if (Build.VERSION.SDK_INT >= 23) {
-            requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-        }
+        Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        // GPS using T Map
-        tMapGPS = new TMapGpsManager(this);
+                //통신
+                sendRequest();
 
-        // Initial Setting
-        tMapGPS.setMinTime(1000);
-        tMapGPS.setMinDistance(10);
-        tMapGPS.setProvider(TMapGpsManager.NETWORK_PROVIDER);
-        //tMapGPS.setProvider(tMapGPS.GPS_PROVIDER);
+            }
+        });
+        //롱클릭 이벤트 - 도보 경로
+        tMapView.setOnLongClickListenerCallback(new TMapView.OnLongClickListenerCallback() {
 
-        tMapGPS.OpenGps();
+            @Override
+            public void onLongPressEvent(ArrayList markerlist, ArrayList poilist, TMapPoint point) {
+                TMapData tmapdata = new TMapData();
 
+                //광진구 임의 현재 위치
+                TMapPoint startpoint = new TMapPoint(37.538517, 127.090039);
+                //TMapPoint endpoint = tmp;
 
+                //길찾기
+                tmapdata.findPathDataWithType(TMapData.TMapPathType.PEDESTRIAN_PATH, startpoint, point, new TMapData.FindPathDataListenerCallback() {
+                    @Override
+                    public void onFindPathData(TMapPolyLine polyLine) {
+                        tMapView.addTMapPath(polyLine);
+                    }
+                });
+
+            }
+        });
+    }
+    public void sendRequest(){
+
+        //String base = "http://15.164.250.186:8000/api/v1/park/list?x=37.538517&y=127.090039&dist=1";
+        String url = String.format("http://15.164.250.186:8000/api/v1/park/list?x=%s&y=%s&dist=%s", "37.538517", "127.090039", "1");
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+                Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+
+            @Override
+            public void onResponse(JSONObject response){
+                try {
+                    JSONObject name = response.getJSONObject("response");
+                    JSONArray list = name.getJSONArray("List");
+                    for(int i=0; i<list.length();i++){
+                        JSONObject park = list.getJSONObject(i);
+                        String p_name = park.getString("p_name");
+                        Parkname.add(p_name);
+
+                        double x = park.getDouble("x");
+                        double y = park.getDouble("y");
+                        alTMapPoint.add(new TMapPoint(x,y));
+                    }
+
+                    bitmap = BitmapFactory.decodeResource(getResources(), R.id.pin);
+                    for(int i=0; i<alTMapPoint.size(); i++){
+                        TMapMarkerItem markerItem1 = new TMapMarkerItem();
+                        // 마커 아이콘 지정
+                        markerItem1.setIcon(bitmap);
+                        // 마커의 좌표 지정
+                        markerItem1.setTMapPoint(alTMapPoint.get(i));
+
+                        // 풍선뷰
+                        markerItem1.setCanShowCallout(true);
+                        markerItem1.setCalloutTitle(Parkname.get(i));
+                        //markerItem1.getCalloutSubTitle();
+
+                        //지도에 마커 추가
+                        tMapView.addMarkerItem("markerItem"+i, markerItem1);
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error){
+                //textView.append("에러 -> " + error.getMessage());
+
+            }
+        });
+
+        jsonObjectRequest.setShouldCache(false); //이전 결과 있어도 새로 요청하여 응답을 보여준다.
+        AppHelper.requestQueue = Volley.newRequestQueue(this); // requestQueue 초기화 필수
+        AppHelper.requestQueue.add(jsonObjectRequest);
 
     }
-
-
-
-    public void onLocationChange(Location location) {
-        tMapView.setLocationPoint(location.getLongitude(), location.getLatitude());
-        tMapView.setCenterPoint(location.getLongitude(), location.getLatitude());
-        //위도, 경도 값 받아서 사용
-        double lat = location.getLatitude();
-        double lon = location.getLongitude();
-
-        TMapPoint point = tMapGPS.getLocation();
-
-
-        TMapMarkerItem markerItem1 = new TMapMarkerItem();
-
-        Bitmap bitmap = BitmapFactory.decodeResource(getBaseContext().getResources(), R.id.pin);
-
-        markerItem1.setIcon(bitmap); // 마커 아이콘 지정
-        markerItem1.setPosition(0.5f, 1.0f); // 마커의 중심점을 중앙, 하단으로 설정
-        markerItem1.setTMapPoint(point); // 마커의 좌표 지정
-        markerItem1.setName("현재위치"); // 마커의 타이틀 지정
-        tMapView.addMarkerItem("markerItem1", markerItem1); // 지도에 마커 추가
-
-    }
-
 
 }
