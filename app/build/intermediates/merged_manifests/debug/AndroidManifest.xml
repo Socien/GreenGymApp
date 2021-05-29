@@ -36,10 +36,6 @@
         <activity android:name="com.example.greengym.Method_Surfing" />
         <activity android:name="com.example.greengym.Method_TurnWaist" />
         <activity android:name="com.example.greengym.Method_Run" />
-        <activity android:name="com.example.greengym.Search_stretch" />
-        <activity android:name="com.example.greengym.Search_all" />
-        <activity android:name="com.example.greengym.Search_down" />
-        <activity android:name="com.example.greengym.Search_up" />
         <activity android:name="com.example.greengym.Search_Map" />
         <activity android:name="com.example.greengym.Search_byEquip" />
         <activity android:name="com.example.greengym.Search" />
