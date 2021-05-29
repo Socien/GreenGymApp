@@ -27,7 +27,7 @@
         android:layout_gravity="center"
         android:background="@drawable/green_button"
         android:textColor="@color/white"
-        android:text="운동 기구로 검색"
+        android:text="운동기구로 검색"
         android:textSize="25dp"
         android:textStyle="bold"/>
 

@@ -19,105 +19,112 @@
 13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 13-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:7:5-79
 13-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:7:22-76
-14
-15    <application
-15-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:9:5-45:19
-16        android:allowBackup="true"
-16-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:10:9-35
-17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.3.1] C:\Users\YYUM\.gradle\caches\transforms-2\files-2.1\b234a824af7fd98a5c54fc0522824a91\core-1.3.1\AndroidManifest.xml:24:18-86
-18        android:debuggable="true"
-19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:11:9-43
-20        android:label="@string/app_name"
-20-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:12:9-41
-21        android:roundIcon="@mipmap/ic_launcher_gym_round"
-21-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:13:9-58
-22        android:supportsRtl="true"
-22-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:14:9-35
-23        android:testOnly="true"
-24        android:theme="@style/Theme.Greengym" >
-24-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:15:9-46
-25        <activity android:name="com.example.greengym.Report" />
-25-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:16:9-53
-25-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:16:19-41
-26        <activity android:name="com.example.greengym.Method_LiftWeight" />
-26-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:17:9-55
-26-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:17:19-52
-27        <activity android:name="com.example.greengym.Method_Rope" />
-27-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:18:9-49
-27-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:18:19-46
-28        <activity android:name="com.example.greengym.Method_Shoulder" />
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:6:5-79
+14-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:6:22-76
+15
+16    <application
+16-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:10:5-48:19
+17        android:allowBackup="true"
+17-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:13:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.3.1] C:\Users\YYUM\.gradle\caches\transforms-2\files-2.1\b234a824af7fd98a5c54fc0522824a91\core-1.3.1\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:14:9-43
+21        android:label="@string/app_name"
+21-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:15:9-41
+22        android:networkSecurityConfig="@xml/network_security_config"
+22-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:11:9-69
+23        android:roundIcon="@mipmap/ic_launcher_gym_round"
+23-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:16:9-58
+24        android:supportsRtl="true"
+24-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:17:9-35
+25        android:testOnly="true"
+26        android:theme="@style/Theme.Greengym"
+26-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:18:9-46
+27        android:usesCleartextTraffic="true" >
+27-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:12:9-44
+28        <activity android:name="com.example.greengym.Report" />
 28-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:19:9-53
-28-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:19:19-50
-29        <activity android:name="com.example.greengym.Method_SitUp" />
-29-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:20:9-50
-29-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:20:19-47
-30        <activity android:name="com.example.greengym.Method_PushLegs" />
-30-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:21:9-53
-30-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:21:19-50
-31        <activity android:name="com.example.greengym.Method_UpperMuscle" />
-31-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:22:9-56
-31-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:22:19-53
-32        <activity android:name="com.example.greengym.Method_WalkingAir" />
-32-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:23:9-55
-32-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:23:19-52
-33        <activity android:name="com.example.greengym.Method_Surfing" />
-33-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:24:9-52
-33-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:24:19-49
-34        <activity android:name="com.example.greengym.Method_TurnWaist" />
-34-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:25:9-54
-34-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:25:19-51
-35        <activity android:name="com.example.greengym.Method_Run" />
-35-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:26:9-48
-35-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:26:19-45
-36        <activity android:name="com.example.greengym.Search_stretch" />
+28-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:19:19-41
+29        <activity android:name="com.example.greengym.Method_LiftWeight" />
+29-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:20:9-55
+29-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:20:19-52
+30        <activity android:name="com.example.greengym.Method_Rope" />
+30-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:21:9-49
+30-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:21:19-46
+31        <activity android:name="com.example.greengym.Method_Shoulder" />
+31-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:22:9-53
+31-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:22:19-50
+32        <activity android:name="com.example.greengym.Method_SitUp" />
+32-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:23:9-50
+32-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:23:19-47
+33        <activity android:name="com.example.greengym.Method_PushLegs" />
+33-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:24:9-53
+33-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:24:19-50
+34        <activity android:name="com.example.greengym.Method_UpperMuscle" />
+34-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:25:9-56
+34-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:25:19-53
+35        <activity android:name="com.example.greengym.Method_WalkingAir" />
+35-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:26:9-55
+35-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:26:19-52
+36        <activity android:name="com.example.greengym.Method_Surfing" />
 36-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:27:9-52
 36-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:27:19-49
-37        <activity android:name="com.example.greengym.Search_all" />
-37-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:28:9-48
-37-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:28:19-45
-38        <activity android:name="com.example.greengym.Search_down" />
-38-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:29:9-49
-38-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:29:19-46
-39        <activity android:name="com.example.greengym.Search_up" />
-39-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:30:9-47
-39-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:30:19-44
-40        <activity android:name="com.example.greengym.Search_Map" />
+37        <activity android:name="com.example.greengym.Method_TurnWaist" />
+37-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:28:9-54
+37-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:28:19-51
+38        <activity android:name="com.example.greengym.Method_Run" />
+38-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:29:9-48
+38-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:29:19-45
+39        <activity android:name="com.example.greengym.Search_stretch" />
+39-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:30:9-52
+39-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:30:19-49
+40        <activity android:name="com.example.greengym.Search_all" />
 40-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:31:9-48
 40-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:31:19-45
-41        <activity android:name="com.example.greengym.Search_byEquip" />
-41-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:32:9-52
-41-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:32:19-49
-42        <activity android:name="com.example.greengym.Search" />
-42-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:33:9-44
-42-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:33:19-41
-43        <activity android:name="com.example.greengym.Rate_Statistic" />
-43-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:34:9-52
-43-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:34:19-49
-44        <activity android:name="com.example.greengym.Rate" />
-44-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:35:9-42
-44-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:35:19-39
-45        <activity android:name="com.example.greengym.Method" />
+41        <activity android:name="com.example.greengym.Search_down" />
+41-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:32:9-49
+41-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:32:19-46
+42        <activity android:name="com.example.greengym.Search_up" />
+42-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:33:9-47
+42-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:33:19-44
+43        <activity android:name="com.example.greengym.Search_Map" />
+43-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:34:9-48
+43-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:34:19-45
+44        <activity android:name="com.example.greengym.Search_byEquip" />
+44-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:35:9-52
+44-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:35:19-49
+45        <activity android:name="com.example.greengym.Search" />
 45-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:36:9-44
 45-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:36:19-41
-46        <activity android:name="com.example.greengym.MainActivity" />
-46-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:37:9-50
-46-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:37:19-47
-47        <activity android:name="com.example.greengym.IntroActivity" >
-47-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:38:9-44:20
-47-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:38:19-48
-48            <intent-filter>
-48-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:39:13-43:29
-49                <action android:name="android.intent.action.MAIN" />
-49-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:40:17-69
-49-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:40:25-66
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-51-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:42:17-77
-51-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:42:27-74
-52            </intent-filter>
-53        </activity>
-54    </application>
-55
-56</manifest>
+46        <activity android:name="com.example.greengym.Rate_Statistic" />
+46-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:37:9-52
+46-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:37:19-49
+47        <activity android:name="com.example.greengym.Rate" />
+47-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:38:9-42
+47-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:38:19-39
+48        <activity android:name="com.example.greengym.Method" />
+48-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:39:9-44
+48-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:39:19-41
+49        <activity android:name="com.example.greengym.MainActivity" />
+49-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:40:9-50
+49-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:40:19-47
+50        <activity android:name="com.example.greengym.IntroActivity" >
+50-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:41:9-47:20
+50-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:41:19-48
+51            <intent-filter>
+51-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:42:13-46:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:43:17-69
+52-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:43:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:45:17-77
+54-->C:\Users\YYUM\Desktop\project\greengym\app\src\main\AndroidManifest.xml:45:27-74
+55            </intent-filter>
+56        </activity>
+57    </application>
+58
+59</manifest>

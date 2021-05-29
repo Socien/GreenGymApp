@@ -11,7 +11,21 @@
         android:id="@+id/Tmap"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="0.1"
         android:orientation="vertical">
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="@drawable/green_button"
+        android:textColor="@color/white"
+        android:text="공원 찾기"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
 
 </android.widget.LinearLayout>

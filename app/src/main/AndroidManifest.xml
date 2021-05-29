@@ -5,8 +5,11 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -24,10 +27,6 @@
         <activity android:name=".Method_Surfing" />
         <activity android:name=".Method_TurnWaist" />
         <activity android:name=".Method_Run" />
-        <activity android:name=".Search_stretch" />
-        <activity android:name=".Search_all" />
-        <activity android:name=".Search_down" />
-        <activity android:name=".Search_up" />
         <activity android:name=".Search_Map" />
         <activity android:name=".Search_byEquip" />
         <activity android:name=".Search" />

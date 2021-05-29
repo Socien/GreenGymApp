@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_downArray">
+        <item>하체 운동기구</item>
+        <item>공중걷기</item>
+        <item>노젓기</item>
+        <item>달리기</item>
+        <item>레그프레스</item>
+        <item>스텝퍼</item>
+        <item>오금펴기</item>
+        <item>자전거</item>
+        <item>파도타기</item>
+    </string-array>
+</resources>

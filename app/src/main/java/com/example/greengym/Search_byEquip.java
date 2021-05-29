@@ -6,11 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 public class Search_byEquip extends AppCompatActivity {
 
-    private Button up, down, all, stretch;
+    private Spinner up, down, all, stretch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,45 +23,85 @@ public class Search_byEquip extends AppCompatActivity {
         ActionBar actionbar = getSupportActionBar();
         actionbar.setTitle("운동 기구로 검색");
 
-        up = (Button) findViewById(R.id.up);
-        down = (Button) findViewById(R.id.down);
-        all = (Button) findViewById(R.id.all);
-        stretch = (Button) findViewById(R.id.stretch);
+        up = (Spinner) findViewById(R.id.up);
+        down = (Spinner) findViewById(R.id.down);
+        all = (Spinner) findViewById(R.id.all);
+        stretch = (Spinner) findViewById(R.id.stretch);
 
         //상체 운동기구
-        up.setOnClickListener(new View.OnClickListener(){
+        ArrayAdapter upAdapter = ArrayAdapter.createFromResource(this, R.array.search_upArray, R.layout.spinner);
+        upAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        up.setAdapter(upAdapter);
+
+        up.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), Search_up.class);
-                startActivity(intent);
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                if(up.getSelectedItemPosition() != 0){
+                    Intent intent = new Intent(getApplicationContext(), Search_Map.class);
+                    startActivity(intent);
+                }
             }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) { }
         });
 
         //하체 운동기구
-        down.setOnClickListener(new View.OnClickListener(){
+        ArrayAdapter downAdapter = ArrayAdapter.createFromResource(this, R.array.search_downArray, R.layout.spinner);
+        downAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        down.setAdapter(downAdapter);
+
+        down.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), Search_down.class);
-                startActivity(intent);
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                if(down.getSelectedItemPosition() != 0){
+                    Intent intent = new Intent(getApplicationContext(), Search_Map.class);
+                    startActivity(intent);
+                }
             }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) { }
         });
 
         //전신 운동기구
-        all.setOnClickListener(new View.OnClickListener(){
+        ArrayAdapter allAdapter = ArrayAdapter.createFromResource(this, R.array.search_allArray, R.layout.spinner);
+        allAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        all.setAdapter(allAdapter);
+
+        all.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), Search_all.class);
-                startActivity(intent);
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                if(all.getSelectedItemPosition() != 0){
+                    Intent intent = new Intent(getApplicationContext(), Search_Map.class);
+                    startActivity(intent);
+                }
             }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) { }
         });
 
         //스트레칭 기구
-        stretch.setOnClickListener(new View.OnClickListener(){
+        ArrayAdapter stretchAdapter = ArrayAdapter.createFromResource(this, R.array.search_stretchArray, R.layout.spinner);
+        stretchAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        stretch.setAdapter(stretchAdapter);
+
+        stretch.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), Search_stretch.class);
-                startActivity(intent);
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                if(stretch.getSelectedItemPosition() != 0){
+                    Intent intent = new Intent(getApplicationContext(), Search_Map.class);
+                    startActivity(intent);
+                }
             }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) { }
         });
     }
 }

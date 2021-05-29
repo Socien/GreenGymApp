@@ -6459,7 +6459,40 @@
         
         <item name="android:statusBarColor" ns2:targetApi="l">?attr/colorPrimaryVariant</item>
         
-    </style></file></source><source path="C:\Users\YYUM\Desktop\project\greengym\app\build\generated\res\rs\debug"/><source path="C:\Users\YYUM\Desktop\project\greengym\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\YYUM\Desktop\project\greengym\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\YYUM\Desktop\project\greengym\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+    </style></file><file name="network_security_config" path="C:\Users\YYUM\Desktop\project\greengym\app\src\main\res\xml\network_security_config.xml" qualifiers="" type="xml"/><file name="spinner" path="C:\Users\YYUM\Desktop\project\greengym\app\src\main\res\layout\spinner.xml" qualifiers="" type="layout"/><file path="C:\Users\YYUM\Desktop\project\greengym\app\src\main\res\values\search_up.xml" qualifiers=""><string-array name="search_upArray">
+        <item>상체 운동기구</item>
+        <item>3단철봉</item>
+        <item>구름사다리</item>
+        <item>로프당기기</item>
+        <item>어깨유연성운동</item>
+        <item>역기내리기</item>
+        <item>역기대</item>
+        <item>역기올리기</item>
+        <item>윗몸일으키기</item>
+        <item>철봉</item>
+        <item>팔굽혀펴기</item>
+    </string-array></file><file path="C:\Users\YYUM\Desktop\project\greengym\app\src\main\res\values\search_stretch.xml" qualifiers=""><string-array name="search_stretchArray">
+        <item>스트레칭 기구</item>
+        <item>등허리근육펴기</item>
+        <item>등허리지압기</item>
+        <item>상체근육풀기</item>
+        <item>하체근육풀기</item>
+        <item>허리돌리기</item>
+    </string-array></file><file path="C:\Users\YYUM\Desktop\project\greengym\app\src\main\res\values\search_all.xml" qualifiers=""><string-array name="search_allArray">
+        <item>전신 운동기구</item>
+        <item>거꾸로 매달리기</item>
+        <item>평행봉</item>
+    </string-array></file><file path="C:\Users\YYUM\Desktop\project\greengym\app\src\main\res\values\search_down.xml" qualifiers=""><string-array name="search_downArray">
+        <item>하체 운동기구</item>
+        <item>공중걷기</item>
+        <item>노젓기</item>
+        <item>달리기</item>
+        <item>레그프레스</item>
+        <item>스텝퍼</item>
+        <item>오금펴기</item>
+        <item>자전거</item>
+        <item>파도타기</item>
+    </string-array></file></source><source path="C:\Users\YYUM\Desktop\project\greengym\app\build\generated\res\rs\debug"/><source path="C:\Users\YYUM\Desktop\project\greengym\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\YYUM\Desktop\project\greengym\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\YYUM\Desktop\project\greengym\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>

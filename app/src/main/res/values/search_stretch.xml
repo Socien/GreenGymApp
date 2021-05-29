@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_stretchArray">
+        <item>스트레칭 기구</item>
+        <item>등허리근육펴기</item>
+        <item>등허리지압기</item>
+        <item>상체근육풀기</item>
+        <item>하체근육풀기</item>
+        <item>허리돌리기</item>
+    </string-array>
+</resources>

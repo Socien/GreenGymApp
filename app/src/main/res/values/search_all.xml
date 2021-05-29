@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_allArray">
+        <item>전신 운동기구</item>
+        <item>거꾸로 매달리기</item>
+        <item>평행봉</item>
+    </string-array>
+</resources>
