@@ -1712,6 +1712,7 @@ id SYM
 id TOP_END
 id TOP_START
 id Tmap
+id Tmap1
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1786,6 +1787,8 @@ id blocking
 id bottom
 id bounce
 id button
+id button1
+id button2
 id buttonPanel
 id byequip
 id byposition
@@ -1853,6 +1856,7 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+id editText
 id edit_query
 id elastic
 id end
@@ -2097,6 +2101,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView1
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2217,6 +2223,7 @@ layout activity_report
 layout activity_search
 layout activity_search__map
 layout activity_search_by_equip
+layout activity_search_equip_list
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
