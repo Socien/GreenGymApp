@@ -14,6 +14,7 @@ import android.Manifest;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -50,9 +51,13 @@ public class Search_EquipList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_equip_list);
 
+        //선택 운동기구 데이터 받음
+        Intent intent = getIntent();
+        select = intent.getExtras().getString("select");
+
         //액션바 제목
         ActionBar actionbar = getSupportActionBar();
-        actionbar.setTitle("운동 기구로 검색");
+        actionbar.setTitle(select);
 
 
         //지도
@@ -70,10 +75,6 @@ public class Search_EquipList extends AppCompatActivity {
 
         LinearLayout Tmap = (LinearLayout)findViewById(R.id.Tmap1);
         Tmap.addView(tMapView);
-
-        //선택 운동기구 데이터 받음
-        Intent intent = getIntent();
-        select = intent.getExtras().getString("select");
 
         Button button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
@@ -156,7 +157,7 @@ public class Search_EquipList extends AppCompatActivity {
 
             @Override
             public void onErrorResponse(VolleyError error){
-                //textView.append("에러 -> " + error.getMessage());
+                Toast.makeText(Search_EquipList.this, error.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
         });

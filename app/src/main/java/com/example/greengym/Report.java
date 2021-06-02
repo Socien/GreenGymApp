@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -141,7 +142,6 @@ public class Report extends AppCompatActivity {
         ok.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
                 //통신
                 sendRequest(park.getSelectedItem().toString(), content.getText().toString(), phone.getText().toString(),
                         name.getText().toString(), date.getText().toString());
@@ -178,8 +178,7 @@ public class Report extends AppCompatActivity {
 
             @Override
             public void onErrorResponse(VolleyError error){
-                content.append("에러 -> " + error.getMessage());
-
+                Toast.makeText(Report.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }) {
             @Override //Post방식

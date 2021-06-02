@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -76,6 +77,7 @@ public class Search_Map extends AppCompatActivity {
         //거리 설정
         km = "1";
         editText = (EditText) findViewById(R.id.editText);
+        editText.setCursorVisible(false);
         editText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -181,8 +183,7 @@ public class Search_Map extends AppCompatActivity {
 
             @Override
             public void onErrorResponse(VolleyError error){
-                //textView.append("에러 -> " + error.getMessage());
-
+                Toast.makeText(Search_Map.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
 
