@@ -22,10 +22,12 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
@@ -53,9 +55,13 @@ public class Report extends AppCompatActivity {
         phone = (EditText) findViewById(R.id.phone);
         ok = (Button) findViewById(R.id.report_ok);
 
+
         ok.setEnabled(false);
+        //날짜
         Calendar cal = Calendar.getInstance();
-        date.setText(cal.get(Calendar.YEAR) + "-" + (cal.get(Calendar.MONTH) + 1) + "-" + cal.get(Calendar.DAY_OF_MONTH));
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        date.setText(sdf.format(cal.getTime()));
+        //date.append(cal.get(Calendar.YEAR) + "-" + (cal.get(Calendar.MONTH) + 1) + "-" + cal.get(Calendar.DAY_OF_MONTH));
 
         //공원 선택
         ArrayAdapter parkAdapter = ArrayAdapter.createFromResource(this, R.array.park_nameArray, android.R.layout.simple_spinner_dropdown_item);
@@ -137,56 +143,60 @@ public class Report extends AppCompatActivity {
             public void onClick(View v) {
 
                 //통신
-                sendRequest();
-
+                sendRequest(park.getSelectedItem().toString(), content.getText().toString(), phone.getText().toString(),
+                        name.getText().toString(), date.getText().toString());
             }
         });
     }
-    public void sendRequest(){
+    public void sendRequest(String p, String c, String phone, String name, String date){
 
         String url = "http://15.164.250.186:8000/api/v1/report/insert";
 
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
-                Request.Method.POST, url, null, new Response.Listener<JSONObject>() {
+        StringRequest StringRequest = new StringRequest(
+                Request.Method.POST, url, new Response.Listener<String>() {
 
             @Override
-            public void onResponse(JSONObject response){
+            public void onResponse(String response){
 
-                AlertDialog.Builder log = new AlertDialog.Builder(Report.this);
-                log.setMessage("신고가 접수되었습니다.");
-                log.setPositiveButton("확인", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                log.show();
+                try{
+                    AlertDialog.Builder log = new AlertDialog.Builder(Report.this);
+                    log.setMessage("신고가 접수되었습니다.");
+                    log.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    log.show();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
 
         }, new Response.ErrorListener() {
 
             @Override
             public void onErrorResponse(VolleyError error){
-                //textView.append("에러 -> " + error.getMessage());
+                content.append("에러 -> " + error.getMessage());
 
             }
         }) {
             @Override //Post방식
             protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> params = new HashMap<>();
-                params.put("p_name", park.getSelectedItem().toString());
-                params.put("r_text", content.getText().toString());
-                params.put("r_phone", phone.getText().toString());
-                params.put("r_name", name.getText().toString());
-                params.put("r_date", date.getText().toString());
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("p_name", p);
+                params.put("r_text", c);
+                params.put("r_phone", phone);
+                params.put("r_name", name);
+                params.put("r_date", date);
                 return params;
             }
         };
 
-        jsonObjectRequest.setShouldCache(false); //이전 결과 있어도 새로 요청하여 응답을 보여준다.
+        StringRequest.setShouldCache(false); //이전 결과 있어도 새로 요청하여 응답을 보여준다.
         AppHelper.requestQueue = Volley.newRequestQueue(this); // requestQueue 초기화 필수
-        AppHelper.requestQueue.add(jsonObjectRequest);
+        AppHelper.requestQueue.add(StringRequest);
 
     }
 }

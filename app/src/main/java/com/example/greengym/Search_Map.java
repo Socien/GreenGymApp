@@ -9,8 +9,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.Manifest;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -37,9 +40,13 @@ public class Search_Map extends AppCompatActivity {
 
     //TMapGpsManager tMapGPS = null;
     TMapView tMapView;
-    ArrayList<TMapPoint> alTMapPoint = new ArrayList<>();
-    ArrayList<String> Parkname = new ArrayList<>();
+    ArrayList<TMapPoint> alTMapPoint;
+    ArrayList<String> Parkname;
     Bitmap bitmap;
+    EditText editText;
+    String km;
+    InputMethodManager manager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,14 +73,37 @@ public class Search_Map extends AppCompatActivity {
         LinearLayout Tmap = (LinearLayout) findViewById(R.id.Tmap);
         Tmap.addView(tMapView);
 
+        //거리 설정
+        km = "1";
+        editText = (EditText) findViewById(R.id.editText);
+        editText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText.setText("");
+                editText.setCursorVisible(true);
+            }
+        });
+
+        manager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+        Button button1 = (Button)findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                km = editText.getText().toString();
+                editText.setCursorVisible(false);
+                manager.hideSoftInputFromWindow(editText.getWindowToken(), 0);
+            }
+        });
+
+
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //마커 초기화
+                tMapView.removeAllMarkerItem();
                 //통신
-                sendRequest();
-
+                sendRequest(km);
             }
         });
         //롱클릭 이벤트 - 도보 경로
@@ -87,7 +117,7 @@ public class Search_Map extends AppCompatActivity {
                 TMapPoint startpoint = new TMapPoint(37.538517, 127.090039);
                 //TMapPoint endpoint = tmp;
 
-                //길찾기
+                //길찾기b
                 tmapdata.findPathDataWithType(TMapData.TMapPathType.PEDESTRIAN_PATH, startpoint, point, new TMapData.FindPathDataListenerCallback() {
                     @Override
                     public void onFindPathData(TMapPolyLine polyLine) {
@@ -98,10 +128,9 @@ public class Search_Map extends AppCompatActivity {
             }
         });
     }
-    public void sendRequest(){
+    public void sendRequest(String km){
 
-        //String base = "http://15.164.250.186:8000/api/v1/park/list?x=37.538517&y=127.090039&dist=1";
-        String url = String.format("http://15.164.250.186:8000/api/v1/park/list?x=%s&y=%s&dist=%s", "37.538517", "127.090039", "1");
+        String url = String.format("http://15.164.250.186:8000/api/v1/park/list?x=%s&y=%s&dist=%s", "37.538517", "127.090039", km);
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
@@ -111,6 +140,10 @@ public class Search_Map extends AppCompatActivity {
                 try {
                     JSONObject name = response.getJSONObject("response");
                     JSONArray list = name.getJSONArray("List");
+
+                    alTMapPoint = new ArrayList<>();
+                    Parkname = new ArrayList<>();
+
                     for(int i=0; i<list.length();i++){
                         JSONObject park = list.getJSONObject(i);
                         String p_name = park.getString("p_name");

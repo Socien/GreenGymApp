@@ -15,13 +15,6 @@ com/example/greengym/Report.java
  com.example.greengym.Report$5$1
  com.example.greengym.Report$6
  com.example.greengym.Report$7
-com/example/greengym/Search_Map.java
- com.example.greengym.Search_Map
- com.example.greengym.Search_Map$1
- com.example.greengym.Search_Map$2
- com.example.greengym.Search_Map$2$1
- com.example.greengym.Search_Map$3
- com.example.greengym.Search_Map$4
 com/example/greengym/Search_byEquip.java
  com.example.greengym.Search_byEquip
  com.example.greengym.Search_byEquip$1
@@ -33,52 +26,6 @@ com/example/greengym/Method_UpperMuscle.java
  com.example.greengym.Method_UpperMuscle$1
  com.example.greengym.Method_UpperMuscle$2
  com.example.greengym.Method_UpperMuscle$3
-com/example/greengym/MainActivity.java
- com.example.greengym.MainActivity
- com.example.greengym.MainActivity$1
- com.example.greengym.MainActivity$2
- com.example.greengym.MainActivity$3
- com.example.greengym.MainActivity$4
-com/example/greengym/Method_WalkingAir.java
- com.example.greengym.Method_WalkingAir
- com.example.greengym.Method_WalkingAir$1
- com.example.greengym.Method_WalkingAir$2
- com.example.greengym.Method_WalkingAir$3
-com/example/greengym/Rate_Statistic.java
- com.example.greengym.Rate_Statistic
- com.example.greengym.Rate_Statistic$myFormatter
-com/example/greengym/BuildConfig.java
- com.example.greengym.BuildConfig
-com/example/greengym/Method_TurnWaist.java
- com.example.greengym.Method_TurnWaist
- com.example.greengym.Method_TurnWaist$1
- com.example.greengym.Method_TurnWaist$2
- com.example.greengym.Method_TurnWaist$3
-com/example/greengym/Rate_DB.java
- com.example.greengym.Rate_DB
-com/example/greengym/Rate.java
- com.example.greengym.Rate
- com.example.greengym.Rate$1
- com.example.greengym.Rate$2
- com.example.greengym.Rate$3
- com.example.greengym.Rate$4
-com/example/greengym/Method_SitUp.java
- com.example.greengym.Method_SitUp
- com.example.greengym.Method_SitUp$1
- com.example.greengym.Method_SitUp$2
- com.example.greengym.Method_SitUp$3
-com/example/greengym/Search.java
- com.example.greengym.Search
- com.example.greengym.Search$1
- com.example.greengym.Search$2
-com/example/greengym/IntroActivity.java
- com.example.greengym.IntroActivity
- com.example.greengym.IntroActivity$1
-com/example/greengym/Method_Shoulder.java
- com.example.greengym.Method_Shoulder
- com.example.greengym.Method_Shoulder$1
- com.example.greengym.Method_Shoulder$2
- com.example.greengym.Method_Shoulder$3
 com/example/greengym/Method_LiftWeight.java
  com.example.greengym.Method_LiftWeight
  com.example.greengym.Method_LiftWeight$1
@@ -101,13 +48,75 @@ com/example/greengym/Method_Rope.java
  com.example.greengym.Method_Rope$1
  com.example.greengym.Method_Rope$2
  com.example.greengym.Method_Rope$3
-com/example/greengym/Method_PushLegs.java
- com.example.greengym.Method_PushLegs
- com.example.greengym.Method_PushLegs$1
- com.example.greengym.Method_PushLegs$2
- com.example.greengym.Method_PushLegs$3
+com/example/greengym/Rate_Statistic.java
+ com.example.greengym.Rate_Statistic
+ com.example.greengym.Rate_Statistic$myFormatter
+com/example/greengym/BuildConfig.java
+ com.example.greengym.BuildConfig
+com/example/greengym/Method_TurnWaist.java
+ com.example.greengym.Method_TurnWaist
+ com.example.greengym.Method_TurnWaist$1
+ com.example.greengym.Method_TurnWaist$2
+ com.example.greengym.Method_TurnWaist$3
+com/example/greengym/Rate_DB.java
+ com.example.greengym.Rate_DB
 com/example/greengym/Method_Run.java
  com.example.greengym.Method_Run
  com.example.greengym.Method_Run$1
  com.example.greengym.Method_Run$2
  com.example.greengym.Method_Run$3
+com/example/greengym/Method_SitUp.java
+ com.example.greengym.Method_SitUp
+ com.example.greengym.Method_SitUp$1
+ com.example.greengym.Method_SitUp$2
+ com.example.greengym.Method_SitUp$3
+com/example/greengym/Search_EquipList.java
+ com.example.greengym.Search_EquipList
+ com.example.greengym.Search_EquipList$1
+ com.example.greengym.Search_EquipList$2
+ com.example.greengym.Search_EquipList$2$1
+ com.example.greengym.Search_EquipList$3
+ com.example.greengym.Search_EquipList$4
+com/example/greengym/IntroActivity.java
+ com.example.greengym.IntroActivity
+ com.example.greengym.IntroActivity$1
+com/example/greengym/Method_WalkingAir.java
+ com.example.greengym.Method_WalkingAir
+ com.example.greengym.Method_WalkingAir$1
+ com.example.greengym.Method_WalkingAir$2
+ com.example.greengym.Method_WalkingAir$3
+com/example/greengym/Rate.java
+ com.example.greengym.Rate
+ com.example.greengym.Rate$1
+ com.example.greengym.Rate$2
+ com.example.greengym.Rate$3
+ com.example.greengym.Rate$4
+com/example/greengym/MainActivity.java
+ com.example.greengym.MainActivity
+ com.example.greengym.MainActivity$1
+ com.example.greengym.MainActivity$2
+ com.example.greengym.MainActivity$3
+ com.example.greengym.MainActivity$4
+com/example/greengym/Method_Shoulder.java
+ com.example.greengym.Method_Shoulder
+ com.example.greengym.Method_Shoulder$1
+ com.example.greengym.Method_Shoulder$2
+ com.example.greengym.Method_Shoulder$3
+com/example/greengym/Method_PushLegs.java
+ com.example.greengym.Method_PushLegs
+ com.example.greengym.Method_PushLegs$1
+ com.example.greengym.Method_PushLegs$2
+ com.example.greengym.Method_PushLegs$3
+com/example/greengym/Search_Map.java
+ com.example.greengym.Search_Map
+ com.example.greengym.Search_Map$1
+ com.example.greengym.Search_Map$2
+ com.example.greengym.Search_Map$3
+ com.example.greengym.Search_Map$4
+ com.example.greengym.Search_Map$4$1
+ com.example.greengym.Search_Map$5
+ com.example.greengym.Search_Map$6
+com/example/greengym/Search.java
+ com.example.greengym.Search
+ com.example.greengym.Search$1
+ com.example.greengym.Search$2

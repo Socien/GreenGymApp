@@ -13,6 +13,7 @@ import android.widget.Spinner;
 public class Search_byEquip extends AppCompatActivity {
 
     private Spinner up, down, all, stretch;
+    String s;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,8 @@ public class Search_byEquip extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 if(up.getSelectedItemPosition() != 0){
-                    Intent intent = new Intent(getApplicationContext(), Search_Map.class);
+                    Intent intent = new Intent(getApplicationContext(), Search_EquipList.class);
+                    intent.putExtra("select",up.getSelectedItem().toString());
                     startActivity(intent);
                 }
             }
@@ -57,7 +59,9 @@ public class Search_byEquip extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 if(down.getSelectedItemPosition() != 0){
-                    Intent intent = new Intent(getApplicationContext(), Search_Map.class);
+                    Intent intent = new Intent(getApplicationContext(), Search_EquipList.class);
+
+                    intent.putExtra("select",down.getSelectedItem().toString());
                     startActivity(intent);
                 }
             }
@@ -76,7 +80,9 @@ public class Search_byEquip extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 if(all.getSelectedItemPosition() != 0){
-                    Intent intent = new Intent(getApplicationContext(), Search_Map.class);
+                    Intent intent = new Intent(getApplicationContext(), Search_EquipList.class);
+
+                    intent.putExtra("select",all.getSelectedItem().toString());
                     startActivity(intent);
                 }
             }
@@ -95,7 +101,9 @@ public class Search_byEquip extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 if(stretch.getSelectedItemPosition() != 0){
-                    Intent intent = new Intent(getApplicationContext(), Search_Map.class);
+                    Intent intent = new Intent(getApplicationContext(), Search_EquipList.class);
+
+                    intent.putExtra("select",stretch.getSelectedItem().toString());
                     startActivity(intent);
                 }
             }
