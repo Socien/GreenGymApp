@@ -14,14 +14,20 @@
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="280dp"
+            android:layout_height="250dp"
             android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="310dp"
+            android:layout_marginTop="280dp"
             android:text="오금펴기"
             android:textColor="@color/black"
             android:textSize="22dp"
@@ -32,8 +38,8 @@
             android:layout_width="360dp"
             android:layout_height="285dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="370dp"
-            android:text="허리를 등받이에 바짝 붙이고, 힘은 다리에 집중시키며 발로 발판을 힘껏 밀었다가 천천히 내립니다.\n\n운동량은 5회에서 10회가 적당합니다.\n2세트에서 3세트를 반복합니다.\n\n하반신 근력을 강화시키며 균형감각을 개선합니다\n하체 관절의 안정성과 유연성을 발달시켜 줍니다."
+            android:layout_marginTop="340dp"
+            android:text="의자에 앉아 발판 위에 발을 올린다.\n\n숨을 내쉬면서 다리의 힘을 주어 발판을 민다.\n\n숨을 들이쉬며 천천히 기본자세로 돌아온다.\n\n1회 운동시 20회에서 30회씩 총 2회정도 한다.\n\n대퇴부, 허벅지, 다리 근력강화, 하체 근육증가, 무릎과 발목 관절의 유연성 강화에 도움을 준다."
             android:textColor="@color/black"
             android:textSize="18dp" />
 
@@ -42,7 +48,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="304dp"
+            android:layout_marginTop="274dp"
             android:background="@drawable/sound" />
 
         <Button

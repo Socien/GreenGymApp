@@ -14,14 +14,20 @@
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="280dp"
+            android:layout_height="250dp"
             android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="310dp"
+            android:layout_marginTop="280dp"
             android:text="상체근육풀기"
             android:textColor="@color/black"
             android:textSize="22dp"
@@ -30,10 +36,10 @@
         <TextView
             android:id="@+id/text"
             android:layout_width="360dp"
-            android:layout_height="285dp"
+            android:layout_height="305dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="370dp"
-            android:text="두 손으로 손잡이를 잡고 상체의 동작을 크게 좌우로 동시에 돌립니다.\n\n하체는 움직이지 않고 상체와 팔만을 이용하는 것이 더 효과적입니다.\n\n운동량은 7회에서 10회가 적당합니다.\n\n어깨 관절의 유연성과 근력강화에 도움이 됩니다."
+            android:layout_marginTop="340dp"
+            android:text="기구를 등지거나 정면을 바라보고 양발을 어깨넓이로 벌린 후 굴레의 양 손잡이를 잡는다.\n\n양발은 움직이지 않고 굴레를 한 손 혹은 양손을 이용해 좌우로 천천히 돌리며 어깨근육을 풀어준다.\n\n1회 운동시 좌우로 10회를 실시하고 3회 반복한다.\n\n전신근육이완 및 혈액순환, 피로회복, 어깨 및 허리 유연성회복에 도움을 준다."
             android:textColor="@color/black"
             android:textSize="18dp" />
 
@@ -42,7 +48,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="304dp"
+            android:layout_marginTop="274dp"
             android:background="@drawable/sound" />
 
         <Button

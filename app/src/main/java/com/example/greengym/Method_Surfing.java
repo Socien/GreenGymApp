@@ -4,12 +4,16 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.Locale;
 
@@ -20,6 +24,7 @@ public class Method_Surfing extends AppCompatActivity {
     private TextToSpeech tts;
     private TextView text;
     private Button sound, youtube;
+    private ImageView gif;
     private int count = 0;
 
     @Override
@@ -34,6 +39,10 @@ public class Method_Surfing extends AppCompatActivity {
         text = (TextView) findViewById(R.id.text);
         sound = (Button) findViewById(R.id.sound);
         youtube = (Button) findViewById(R.id.youtube);
+        gif = (ImageView) findViewById(R.id.gif);
+
+        //gif 파일
+        Glide.with(this).load(R.drawable.surfing2).into(gif);
 
         //소리
         tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {

@@ -14,14 +14,20 @@
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="280dp"
+            android:layout_height="250dp"
             android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="310dp"
+            android:layout_marginTop="280dp"
             android:text="허리돌리기"
             android:textColor="@color/black"
             android:textSize="22dp"
@@ -32,8 +38,8 @@
             android:layout_width="360dp"
             android:layout_height="250dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="370dp"
-            android:text="원형 발판에 발을 올린 후 손잡이를 잡고 좌우로 흔들어줍니다.\n\n1회 운동량은 5회에서 10회가 적당합니다.\n2에서 3세트를 반복합니다.\n\n심폐기능의 조절능력 향상과 허리근육, 관절의 활동능력 향상 및 유산소 운동으로 체지방연소 효과가 있습니다."
+            android:layout_marginTop="340dp"
+            android:text="손잡이를 잡은 후 발판에 양발을 올린다.\n\n양 손잡이를 잡은 상태에서 상체는 정면을 바라보며 허리와 하체한 좌우로 회전한다.\n\n1회 운동시 좌우로 50번씩 총 3회를 실시한다.\n\n허리와 복부 지방제거 및 혈액순환, 소화기 계통 개선 효과를 준다."
             android:textColor="@color/black"
             android:textSize="18dp" />
 
@@ -42,7 +48,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="304dp"
+            android:layout_marginTop="274dp"
             android:background="@drawable/sound" />
 
         <Button

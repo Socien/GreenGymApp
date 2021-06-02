@@ -14,14 +14,20 @@
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="280dp"
+            android:layout_height="250dp"
             android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="310dp"
+            android:layout_marginTop="280dp"
             android:text="어깨유연성운동"
             android:textColor="@color/black"
             android:textSize="22dp"
@@ -30,10 +36,10 @@
         <TextView
             android:id="@+id/text"
             android:layout_width="360dp"
-            android:layout_height="285dp"
+            android:layout_height="315dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="370dp"
-            android:text="두 손으로 손잡이를 잡고, 좌우 방향이나 방향을 바꿔가며 돌리는 동작을 반복합니다.\n\n운동량은 7회에서 10회가 적당합니다.\n\n어깨 근육을 부드럽게 풀어주며 손목관절의 유연성과 상체의 민첩성을 높입니다."
+            android:layout_marginTop="340dp"
+            android:text="양발을 어깨넓이로 벌린 후 굴레의 양 손잡이를 잡는다.\n\n좌우 방향이나 방향을 바꿔가며 돌리는 동작을 반복합니다.\n\n1회 운동시 좌우로 10회 운동하고 총 3회 반복합니다.\n\n어깨관절의 회전운동을 통한 혈액순환, 오십견 예방 및 재활, 어깨근육 및 관절 유연성 강화, 퇴화 방지에 도움을 준다."
             android:textColor="@color/black"
             android:textSize="18dp" />
 
@@ -42,7 +48,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="304dp"
+            android:layout_marginTop="274dp"
             android:background="@drawable/sound" />
 
         <Button

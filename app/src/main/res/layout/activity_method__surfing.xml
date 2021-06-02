@@ -14,14 +14,20 @@
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="280dp"
+            android:layout_height="250dp"
             android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="310dp"
+            android:layout_marginTop="280dp"
             android:text="파도타기"
             android:textColor="@color/black"
             android:textSize="22dp"
@@ -32,8 +38,8 @@
             android:layout_width="360dp"
             android:layout_height="285dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="370dp"
-            android:text="손으로 손잡이를 잡고 양발을 가지런히 발판 위에 올린 후 허리와 상체의 움직임을 최대한 적게 하고 양발을 좌우로 흔들어 줍니다.\n\n횟수는 7회에서 10회가 적당합니다.\n\n상체를 움직이면 허리 인대까지 자극이 전달되지 않아 효과가 떨어집니다.\n\n옆구리가 당기는 느낌이 들 정도만 하체를 움직이는 것이 좋습니다."
+            android:layout_marginTop="340dp"
+            android:text="양 손잡이를 잡고 발판 위에 양발을 올린다.\n\n허리와 상체의 움직임을 최대한 적게 하고 양발을 좌우로 흔들어 준다.\n\n1회 운동시 좌우로 40회에서 50회씩 3회를 실시한다.\n\n심폐기능 강화, 허리와 골반의 유연성, 지방제거, 허리근육 이완 및 혈액순환에 도움을 준다."
             android:textColor="@color/black"
             android:textSize="18dp" />
 
@@ -42,7 +48,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="304dp"
+            android:layout_marginTop="274dp"
             android:background="@drawable/sound" />
 
         <Button

@@ -14,14 +14,20 @@
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="280dp"
+            android:layout_height="250dp"
             android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="310dp"
+            android:layout_marginTop="280dp"
             android:text="윗몸일으키기"
             android:textColor="@color/black"
             android:textSize="22dp"
@@ -32,8 +38,8 @@
             android:layout_width="360dp"
             android:layout_height="285dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="370dp"
-            android:text="기구에 누운 후 손을 머리 뒤에 놓고 발은 발판사이에 끼워 넣습니다.\n복근에 힘을 주며 상체를 일으켰다가 내립니다.\n\n운동량은 5회에서 10회가 적당합니다.\n\n허리와 복부 근력의 탄성을 길러주고, 하복부 체지방이 분해되는 효과가 있습니다."
+            android:layout_marginTop="340dp"
+            android:text="지지대에 발목을 고정하고 어깨를 펴 양팔로 머리를 감싼 후 편안히 눕는다.\n\n허리의 힘으로 상체를 일으킨 후 천천히 다시 원위치로 다시 눕는다.\n\n1회 운동시 좌우로 15회에서 30회씩 3회를 한다.\n\n복근 및 허리근육 강화, 허리와 복부 지방제거, 소화기 계통 개선에 도움을 준다."
             android:textColor="@color/black"
             android:textSize="18dp" />
 
@@ -42,7 +48,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="304dp"
+            android:layout_marginTop="274dp"
             android:background="@drawable/sound" />
 
         <Button

@@ -10,7 +10,10 @@ import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import org.w3c.dom.Text;
 
@@ -22,6 +25,7 @@ public class Method_Run extends AppCompatActivity {
     private TextToSpeech tts;
     private TextView text;
     private Button sound, youtube;
+    private ImageView gif;
     private int count = 0;
 
     @Override
@@ -36,6 +40,10 @@ public class Method_Run extends AppCompatActivity {
         text = (TextView) findViewById(R.id.text);
         sound = (Button) findViewById(R.id.sound);
         youtube = (Button) findViewById(R.id.youtube);
+        gif = (ImageView) findViewById(R.id.gif);
+
+        //gif 파일
+        Glide.with(this).load(R.drawable.run2).into(gif);
 
         //소리
         tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {

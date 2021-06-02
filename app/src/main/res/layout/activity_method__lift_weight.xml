@@ -14,14 +14,20 @@
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="280dp"
+            android:layout_height="250dp"
             android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="310dp"
+            android:layout_marginTop="280dp"
             android:text="역기올리기"
             android:textColor="@color/black"
             android:textSize="22dp"
@@ -30,10 +36,10 @@
         <TextView
             android:id="@+id/text"
             android:layout_width="360dp"
-            android:layout_height="285dp"
+            android:layout_height="345dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="370dp"
-            android:text="의자에 앉아 손잡이를 잡고 손잡이를 천천히 앞으로 밉미다.\n팔에 힘을 빼고 원위치로 당깁니다.\n\n운동량은 7회에서 10회가 적당합니다.\n\n가슴과 어깨 근육 등 상체 근육을 발달시키겨 관절을 부드럽게 풀어줍니다."
+            android:layout_marginTop="340dp"
+            android:text="의자에 앉아 양 손잡이를 잡는다.\n\n숨을 내쉬며 팔과 어깨에 힘을 주어 손잡이를 밀어 올린다.\n다시 숨을 들이쉬면서 천천히 처음자세로 돌아온다.\n\n1회 운동시 10회에서 20회를 실시하고 총 3회정도 한다.\n\n상체 근육 강화, 어깨와 팔꿈치 강화 및 유연성 증가, 가슴과 복근 단련 효과를 준다."
             android:textColor="@color/black"
             android:textSize="18dp" />
 
@@ -42,7 +48,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="304dp"
+            android:layout_marginTop="274dp"
             android:background="@drawable/sound" />
 
         <Button

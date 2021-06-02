@@ -14,14 +14,20 @@
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="280dp"
+            android:layout_height="250dp"
             android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="310dp"
+            android:layout_marginTop="280dp"
             android:text="공중걷기"
             android:textColor="@color/black"
             android:textSize="22dp"
@@ -32,8 +38,8 @@
             android:layout_width="360dp"
             android:layout_height="307dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="370dp"
-            android:text="손잡이를 잡고 공중에서 두 다리를 번갈아 가면서 걷습니다. \n\n손잡이를 잡고 두 발을 발판 위에 올려 똑바로 선 후 평지를 걷듯이 두 발을 앞뒤로 흔듭니다.\n\n운동시간은 5분에서 10분이 적당합니다.\n\n상체를 구부린 상태에서 움직이면 근육을 전체적으로 사용하지 못해 운동 효과가 떨어집니다."
+            android:layout_marginTop="340dp"
+            android:text="양 손잡이를 잡고 한발씩 발판 위에 발을 올리고 몸의 중심을 잡는다.\n\n상체는 고정하고 허리를 곧게 편 후 하체의 양발을 걷듯이 자연스럽게 교차한다.\n\n1회당 3분에서 5분씩 실시하고 이를 1회에서 3회를 반복한다.\n\n유산소 운동에 의한 심폐기능 강화, 하체 유연성 강화, 균형감각에 도움을 준다."
             android:textColor="@color/black"
             android:textSize="18dp" />
 
@@ -42,7 +48,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="304dp"
+            android:layout_marginTop="274dp"
             android:background="@drawable/sound" />
 
         <Button

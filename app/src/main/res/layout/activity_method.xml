@@ -22,6 +22,14 @@
                 android:layout_marginTop="15dp"
                 android:background="@color/white" />
 
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/turn_waist1"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -51,6 +59,14 @@
                 android:layout_height="150dp"
                 android:layout_marginTop="180dp"
                 android:background="@color/white" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="180dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/walking_air1"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -82,6 +98,14 @@
                 android:layout_marginTop="345dp"
                 android:background="@color/white" />
 
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="345dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/surfing1"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -111,6 +135,14 @@
                 android:layout_height="150dp"
                 android:layout_marginTop="510dp"
                 android:background="@color/white" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="510dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/upper_muscle1"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -142,6 +174,14 @@
                 android:layout_marginTop="675dp"
                 android:background="@color/white" />
 
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="675dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/run1"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -171,6 +211,14 @@
                 android:layout_height="150dp"
                 android:layout_marginTop="840dp"
                 android:background="@color/white" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="840dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/push_legs1"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -202,6 +250,14 @@
                 android:layout_marginTop="1005dp"
                 android:background="@color/white" />
 
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="1005dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/sit_up1"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -231,6 +287,14 @@
                 android:layout_height="150dp"
                 android:layout_marginTop="1170dp"
                 android:background="@color/white" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="1170dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shoulder1"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -262,6 +326,14 @@
                 android:layout_marginTop="1335dp"
                 android:background="@color/white" />
 
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="1335dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rope1"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -291,6 +363,14 @@
                 android:layout_height="150dp"
                 android:layout_marginTop="1500dp"
                 android:background="@color/white" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="1500dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/lift_weight1"/>
 
             <TextView
                 android:layout_width="wrap_content"
