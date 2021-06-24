@@ -16,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Greengym"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Search_EquipList"></activity>
+        <activity android:name=".GPS"></activity>
+        <activity android:name=".Search_EquipList" />
         <activity android:name=".Report" />
         <activity android:name=".Method_LiftWeight" />
         <activity android:name=".Method_Rope" />

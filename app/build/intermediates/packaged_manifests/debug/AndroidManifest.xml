@@ -25,6 +25,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.Greengym"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.greengym.GPS" />
         <activity android:name="com.example.greengym.Search_EquipList" />
         <activity android:name="com.example.greengym.Report" />
         <activity android:name="com.example.greengym.Method_LiftWeight" />

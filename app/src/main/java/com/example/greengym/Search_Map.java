@@ -74,7 +74,7 @@ public class Search_Map extends AppCompatActivity {
         LinearLayout Tmap = (LinearLayout) findViewById(R.id.Tmap);
         Tmap.addView(tMapView);
 
-        //거리 설정
+        //검색 거리 설정
         km = "1";
         editText = (EditText) findViewById(R.id.editText);
         editText.setCursorVisible(false);
@@ -86,6 +86,7 @@ public class Search_Map extends AppCompatActivity {
             }
         });
 
+        //키보드 제어
         manager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
         Button button1 = (Button)findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
@@ -97,7 +98,7 @@ public class Search_Map extends AppCompatActivity {
             }
         });
 
-
+        //공원 찾기 버튼
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,7 +109,7 @@ public class Search_Map extends AppCompatActivity {
                 sendRequest(km);
             }
         });
-        //롱클릭 이벤트 - 도보 경로
+        //롱클릭 이벤트 - 도보 경로 출력
         tMapView.setOnLongClickListenerCallback(new TMapView.OnLongClickListenerCallback() {
 
             @Override
@@ -119,7 +120,7 @@ public class Search_Map extends AppCompatActivity {
                 TMapPoint startpoint = new TMapPoint(37.538517, 127.090039);
                 //TMapPoint endpoint = tmp;
 
-                //길찾기b
+                //길찾기
                 tmapdata.findPathDataWithType(TMapData.TMapPathType.PEDESTRIAN_PATH, startpoint, point, new TMapData.FindPathDataListenerCallback() {
                     @Override
                     public void onFindPathData(TMapPolyLine polyLine) {
