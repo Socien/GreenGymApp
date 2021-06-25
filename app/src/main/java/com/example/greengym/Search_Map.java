@@ -60,7 +60,7 @@ public class Search_Map extends AppCompatActivity {
 
         //지도
         tMapView = new TMapView(this);
-        tMapView.setSKTMapApiKey("l7xxffa04884ccc4425e9ac15036b9b46726");
+        tMapView.setSKTMapApiKey("l7xx6be41da6c7754455a30d0fa9438f6896");
 
         tMapView.setZoomLevel(15);
         tMapView.setIconVisibility(true);
